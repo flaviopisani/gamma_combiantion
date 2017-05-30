@@ -29,6 +29,9 @@ ggsz_x_err(1)                = sqrt( ggsz_x_stat_err(1) * ggsz_x_stat_err(1) + g
 ggsz_x_err(2)                = sqrt( ggsz_x_stat_err(2) * ggsz_x_stat_err(2) + ggsz_x_syst_err(2) * ggsz_x_syst_err(2) );
 ggsz_x_err(3)                = sqrt( ggsz_x_stat_err(3) * ggsz_x_stat_err(3) + ggsz_x_syst_err(3) * ggsz_x_syst_err(3) );
 
+
+
+/*
 //TMatrixDSym corrStatGGSZ(4);
 //      x_minus                         y_minus                         x_plus                          y_plus
 corrStatGGSZ(0,0)=1.0;                  corrStatGGSZ(0,1)=-0.247;               corrStatGGSZ(0,2)=0.038;                 corrStatGGSZ(0,3)=-0.003;
@@ -42,7 +45,7 @@ corrSystGGSZ(0,0)=1.0;                  corrSystGGSZ(0,1)=0.005;                
 corrSystGGSZ(1,0)=corrSystGGSZ(0,1);    corrSystGGSZ(1,1)=1.0;                  corrSystGGSZ(1,2)=0.009;                 corrSystGGSZ(1,3)=-0.141;
 corrSystGGSZ(2,0)=corrSystGGSZ(0,2);    corrSystGGSZ(2,1)=corrSystGGSZ(1,2);    corrSystGGSZ(2,2)=1.0;                   corrSystGGSZ(2,3)=0.008;
 corrSystGGSZ(3,0)=corrSystGGSZ(0,3);    corrSystGGSZ(3,1)=corrSystGGSZ(1,3);    corrSystGGSZ(3,2)=corrSystGGSZ(2,3);     corrSystGGSZ(3,3)=1.0;
-
+*/
 //TMatrixDSym 
 covStatGGSZ = buildCov(corrStatGGSZ,ggsz_x_stat_err);
 //TMatrixDSym 
