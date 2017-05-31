@@ -29,6 +29,11 @@
 #include <RooRealVar.h>
 #include <RooDataHist.h>
 #include <RooHistPdf.h>
+
+
+
+
+
 using namespace std;
 
 #define N1DPLOT  32
@@ -45,6 +50,11 @@ using namespace std;
 #include <function.c>
 // Main routine for chi2 and baysian analysis
 #include <prob.c>
+
+
+#include <measures_classes.h>
+#include <assign_from_classes.cpp>
+
 
 int main(int argc, char * argv[]) {
 
@@ -115,8 +125,8 @@ int main(int argc, char * argv[]) {
 
 
 
-#include <measures_classes.h>
-#include <assign_from_classes.h>
+
+
 
   /////////////////////////////////////////////////////////////////////////////
   /////////////////////////////// END INPUTS //////////////////////////////////

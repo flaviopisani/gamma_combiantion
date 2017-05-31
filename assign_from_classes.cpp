@@ -1,5 +1,6 @@
 
-void assign_from_json () {
+
+void assign_from_classes () {
 
 	//ggsz
 	ggsz ggsz_paper;
@@ -22,8 +23,8 @@ void assign_from_json () {
 
 	double* pointer_to_matrix_stat;
 	double* pointer_to_matrix_syst;
-	pointer_to_matrix_stat = get_corrStatGGSZ_class();
-	pointer_to_matrix_syst = get_corrSystGGSZ_class()
+	pointer_to_matrix_stat = ggsz_paper.get_corrStatGGSZ_class();
+	pointer_to_matrix_syst = ggsz_paper.get_corrSystGGSZ_class();
 
 	for (int i=0; i<4; i++){
 		for (int j=0; j<4; j++) {

@@ -2,7 +2,6 @@
 #define MEASURES_CLASSES_H
 
 
-
 class ggsz {
 
 	public:
@@ -35,7 +34,7 @@ class ggsz {
 	double corrStatGGSZ_class[16];
 	double corrSystGGSZ_class[16];
 
-}
+};
 
 
 
