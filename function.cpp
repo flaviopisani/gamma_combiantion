@@ -1,3 +1,5 @@
+#include "function.h"
+
 int rmvnorm(const gsl_rng *r, const int n, const gsl_vector *mean, const gsl_matrix *var, gsl_vector *result){
   /* multivariate normal distribution random number generator */
   /*
@@ -33,20 +35,20 @@ double DG(double x, double y,double fX,double fY,double fXError,double fYError,d
 
 TMatrixDSym buildCov( TMatrixDSym cor, TVectorD err) {
   TMatrixDSym cov(cor.GetNcols());
-  for(int i=0; i<cor.GetNcols(); i++) { 
-    for (int j=0; j<cor.GetNcols();j++) {  
-      cov(i,j)  = err[i]  * cor(i,j) * err[j]; 
-    } 
+  for(int i=0; i<cor.GetNcols(); i++) {
+    for (int j=0; j<cor.GetNcols();j++) {
+      cov(i,j)  = err[i]  * cor(i,j) * err[j];
+    }
   }
   return cov;
 }
 
 TMatrixDSym buildCor( TMatrixDSym cov) {
   TMatrixDSym cor(cov.GetNcols());
-  for(int i=0; i<cov.GetNcols(); i++) { 
-    for (int j=0; j<cov.GetNcols();j++) {  
+  for(int i=0; i<cov.GetNcols(); i++) {
+    for (int j=0; j<cov.GetNcols();j++) {
       cor(i,j)  = cov(i,j)/sqrt(cov(i,i))/sqrt(cov(j,j));
-    } 
+    }
   }
   return cor;
 }
