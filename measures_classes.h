@@ -1,6 +1,8 @@
 #ifndef MEASURES_CLASSES_H
 #define MEASURES_CLASSES_H
 
+#include <fstream>
+#include "jsoncpp/dist/json/json.h"
 
 class ggsz {
 

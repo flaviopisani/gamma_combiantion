@@ -1,17 +1,11 @@
-
-
 // ogni classe corrisponde ad un tipo di misura
-#include <fstream>
-#include <jsoncpp/json/json.h>
 #include <measures_classes.h>
-using namespace std;
-
 
 
 
 void ggsz :: assign_from_json () {
 
-	ifstream ifs("global_variable.json");
+	std::ifstream ifs("global_variable.json");
 	Json::Reader reader;
 	Json::Value obj;
 	reader.parse(ifs,obj);

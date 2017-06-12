@@ -47,7 +47,7 @@ using namespace std;
 #include <global_variable.c>
 // definition of the functions
 #include <functions_dmix_th.h>
-#include <function.c>
+#include <function.h>
 // Main routine for chi2 and baysian analysis
 #include <prob.c>
 

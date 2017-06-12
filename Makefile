@@ -1,3 +1,5 @@
+# DO NOT USE THIS MAKEFILE IS DEPRECATED USE CMAKE
+
 CXX=g++48
 
 root_flags:=$(shell root-config --libs --glibs --cflags --ldflags)
