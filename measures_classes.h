@@ -4,7 +4,7 @@
 #include <fstream>
 #include "jsoncpp/dist/json/json.h"
 
-class ggsz {
+class Ggsz {
 
 	public:
 	void assign_from_json ();
@@ -37,6 +37,11 @@ class ggsz {
 	double corrSystGGSZ_class[16];
 
 };
+
+
+
+
+void assign_from_classes ();
 
 
 

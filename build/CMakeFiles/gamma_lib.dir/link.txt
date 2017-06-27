@@ -1,0 +1,2 @@
+/usr/bin/ar qc libgamma_lib.a  CMakeFiles/gamma_lib.dir/function.o CMakeFiles/gamma_lib.dir/functions_dmix_th.o CMakeFiles/gamma_lib.dir/measures_classes.o
+/usr/bin/ranlib libgamma_lib.a
