@@ -3,9 +3,10 @@
 
 
 
-void Ggsz :: assign_from_json () {
+void Ggsz :: assign_from_json (string json_file) {
 
-	std::ifstream ifs("global_variable.json");
+	std::ifstream ifs(json_file);
+	if (ifs) {
 	Json::Reader reader;
 	Json::Value obj;
 	reader.parse(ifs,obj);
@@ -32,16 +33,18 @@ void Ggsz :: assign_from_json () {
 	for (int element=0; element<16;element++) {
 			corrSystGGSZ_class[element] = obj["ggsz"]["ggsz_paper_0"]["corr_Sys_paper_0"][element].asDouble();
 		}
+	}
+
 
 }
 
 
 
-void assign_from_classes () {
+void assign_from_classes (string json_file) {
 
 	//ggsz
 	ggsz ggsz_paper;
-	ggsz_paper.assign_from_json();
+	ggsz_paper.assign_from_json(json_file);
 
 	x_plus = ggsz_paper.get_x_plus_class();
 	x_minus = ggsz_paper.get_x_minus_class();

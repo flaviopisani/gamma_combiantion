@@ -3,6 +3,8 @@
 
 #include <fstream>
 #include "jsoncpp/dist/json/json.h"
+#include <string>
+
 
 class Ggsz {
 

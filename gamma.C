@@ -53,21 +53,23 @@ using namespace std;
 
 
 #include <measures_classes.h>
-#include <assign_from_classes.cpp>
 
 
 int main(int argc, char * argv[]) {
 
   int grid =0;
 
-  if (argc>4){
+  if (argc>5){
     cout<<"wrong usage. Correct: ./gamma [mode] [n. extraction]  "<<endl;return 0;
   }
   char * mode;
   mode = argv[1];
   int NMAX = atoi(argv[2]);
   int modeNum;
-  if(argc>3)grid = atoi(argv[3]);
+
+  string json_file = argv[3];
+ 
+  if(argc>4)grid = atoi(argv[4]);
 
 
   int jobpid = getpid();
@@ -134,7 +136,7 @@ int main(int argc, char * argv[]) {
 
 
 
-assign_from_classes();
+assign_from_classes(json_file);
 
 
 
