@@ -6,11 +6,15 @@
 
 #IncludeRegexTransform: 
 
+..//global_variable.c
+
 ..//measures_classes.h
 fstream
 -
 jsoncpp/dist/json/json.h
 ../jsoncpp/dist/json/json.h
+global_variable.c
+-
 
 ../jsoncpp/dist/json/json.h
 stddef.h

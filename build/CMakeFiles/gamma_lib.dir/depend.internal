@@ -45,6 +45,7 @@ CMakeFiles/gamma_lib.dir/functions_dmix_th.o
  /home/massimiliano/Documents/tirocinio/gamma_combination/functions_dmix_th.cpp
  /home/massimiliano/Documents/tirocinio/gamma_combination/functions_dmix_th.h
 CMakeFiles/gamma_lib.dir/measures_classes.o
+ ..//global_variable.c
  ..//measures_classes.h
  ../jsoncpp/dist/json/json.h
  /home/massimiliano/Documents/tirocinio/gamma_combination/measures_classes.cpp

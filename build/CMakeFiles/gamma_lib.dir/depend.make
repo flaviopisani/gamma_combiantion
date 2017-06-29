@@ -44,6 +44,7 @@ CMakeFiles/gamma_lib.dir/function.o: /home/massimiliano/root5/include/strlcpy.h
 CMakeFiles/gamma_lib.dir/functions_dmix_th.o: ../functions_dmix_th.cpp
 CMakeFiles/gamma_lib.dir/functions_dmix_th.o: ../functions_dmix_th.h
 
+CMakeFiles/gamma_lib.dir/measures_classes.o: ../global_variable.c
 CMakeFiles/gamma_lib.dir/measures_classes.o: ../measures_classes.h
 CMakeFiles/gamma_lib.dir/measures_classes.o: ../jsoncpp/dist/json/json.h
 CMakeFiles/gamma_lib.dir/measures_classes.o: ../measures_classes.cpp

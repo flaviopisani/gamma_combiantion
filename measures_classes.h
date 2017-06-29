@@ -3,13 +3,12 @@
 
 #include <fstream>
 #include "jsoncpp/dist/json/json.h"
-#include <string>
 
 
 class Ggsz {
 
 	public:
-	void assign_from_json ();
+	void assign_from_json (char*);
 	
 	double get_x_plus_class () {return x_plus_class;};
 	double get_x_minus_class () {return x_minus_class;};
@@ -43,7 +42,7 @@ class Ggsz {
 
 
 
-void assign_from_classes ();
+
 
 
 

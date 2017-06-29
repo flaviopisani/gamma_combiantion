@@ -53,6 +53,7 @@ using namespace std;
 
 
 #include <measures_classes.h>
+#include <assign_from_classes.h>
 
 
 int main(int argc, char * argv[]) {
@@ -67,7 +68,7 @@ int main(int argc, char * argv[]) {
   int NMAX = atoi(argv[2]);
   int modeNum;
 
-  string json_file = argv[3];
+  char json_file[] = argv[3];
  
   if(argc>4)grid = atoi(argv[4]);
 
