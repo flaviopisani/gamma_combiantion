@@ -2,6 +2,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/gamma_lib.dir/function.o"
   "CMakeFiles/gamma_lib.dir/functions_dmix_th.o"
   "CMakeFiles/gamma_lib.dir/measures_classes.o"
+  "CMakeFiles/gamma_lib.dir/assign_from_classes.o"
   "libgamma_lib.pdb"
   "libgamma_lib.a"
 )

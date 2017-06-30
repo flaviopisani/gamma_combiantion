@@ -6,15 +6,13 @@
 
 #IncludeRegexTransform: 
 
-..//global_variable.c
+..//assign_from_classes.h
 
 ..//measures_classes.h
 fstream
 -
 jsoncpp/dist/json/json.h
 ../jsoncpp/dist/json/json.h
-global_variable.c
--
 
 ../jsoncpp/dist/json/json.h
 stddef.h
@@ -75,6 +73,10 @@ sstream
 -
 config.h
 ../jsoncpp/dist/json/config.h
+
+/home/massimiliano/Documents/tirocinio/gamma_combination/assign_from_classes.cpp
+assign_from_classes.h
+-
 
 /home/massimiliano/Documents/tirocinio/gamma_combination/function.cpp
 function.h
