@@ -1,6 +1,6 @@
 #include <assign_from_classes.h>
 
-void assign_from_classes (char* json_file) {
+void ::assign_from_classes (char* json_file) {
 
 	//ggsz
 	Ggsz ggsz_paper;

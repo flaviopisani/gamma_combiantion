@@ -56,22 +56,27 @@ TVectorD GAhh_x_stat_err(7), GAhh_x_syst_err(7), GAhh_x_err(7);
 TMatrixDSym corStatGAhh(7), corSystGAhh(7), covStatGAhh(7),covSystGAhh(7),covGAhh(7),corGAhh(7);
 
 // GGSZ
-double x_minus;//          = 0.025;
-double y_minus;//          = 0.075;
-double x_plus;//           =-0.077;
-double y_plus;//           =-0.022;
 
-double x_minus_stat_err;//      = 0.025;  
-double x_minus_syst_err;//      = 0.01118;
-double y_minus_stat_err;//      = 0.029;  
-double y_minus_syst_err;//      = 0.01487;
-double x_plus_stat_err;//       = 0.024;  
-double x_plus_syst_err;//       = 0.01077;
-double y_plus_stat_err;//       = 0.025;  
-double y_plus_syst_err;//       = 0.01077;
+ double x_minus;//          = 0.025;
+ double y_minus;//          = 0.075;
+ double x_plus;//           =-0.077;
+ double y_plus;//           =-0.022;
+
+ double x_minus_stat_err;//      = 0.025;  
+ double x_minus_syst_err;//      = 0.01118;
+ double y_minus_stat_err;//      = 0.029;  
+ double y_minus_syst_err;//      = 0.01487;
+ double x_plus_stat_err;//       = 0.024;  
+ double x_plus_syst_err;//       = 0.01077;
+ double y_plus_stat_err;//       = 0.025;  
+ double y_plus_syst_err;//       = 0.01077;
+
+TMatrixDSym corrStatGGSZ(4), corrSystGGSZ(4);
+
+
 
 TVectorD ggsz_x_stat_err(4), ggsz_x_syst_err(4), ggsz_x_err(4);
-TMatrixDSym corrStatGGSZ(4), corrSystGGSZ(4), covStatGGSZ(4),covSystGGSZ(4),covGGSZ(4),corGGSZ(4);
+TMatrixDSym covStatGGSZ(4),covSystGGSZ(4),covGGSZ(4),corGGSZ(4);
 
 
 // GGSZ DKPi

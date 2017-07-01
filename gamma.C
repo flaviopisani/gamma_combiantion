@@ -68,7 +68,8 @@ int main(int argc, char * argv[]) {
   int NMAX = atoi(argv[2]);
   int modeNum;
 
-  char json_file[] = argv[3];
+  char* json_file; 
+  json_file = argv[3];
  
   if(argc>4)grid = atoi(argv[4]);
 
@@ -137,7 +138,7 @@ int main(int argc, char * argv[]) {
 
 
 
-assign_from_classes(json_file);
+//assign_from_classes (json_file);
 
 
 

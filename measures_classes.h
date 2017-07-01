@@ -8,7 +8,7 @@
 class Ggsz {
 
 	public:
-	void assign_from_json (char*);
+	void assign_from_json (char* json_file);
 	
 	double get_x_plus_class () {return x_plus_class;};
 	double get_x_minus_class () {return x_minus_class;};
