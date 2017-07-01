@@ -6,8 +6,6 @@
 
 #IncludeRegexTransform: 
 
-..//assign_from_classes.h
-
 ..//measures_classes.h
 fstream
 -
@@ -73,10 +71,6 @@ sstream
 -
 config.h
 ../jsoncpp/dist/json/config.h
-
-/home/massimiliano/Documents/tirocinio/gamma_combination/assign_from_classes.cpp
-assign_from_classes.h
--
 
 /home/massimiliano/Documents/tirocinio/gamma_combination/function.cpp
 function.h

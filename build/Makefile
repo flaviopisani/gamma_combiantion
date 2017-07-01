@@ -150,21 +150,6 @@ libjsoncpp/fast:
 .PHONY : libjsoncpp/fast
 
 # target to build an object file
-assign_from_classes.o:
-	$(MAKE) -f CMakeFiles/gamma_lib.dir/build.make CMakeFiles/gamma_lib.dir/assign_from_classes.o
-.PHONY : assign_from_classes.o
-
-# target to preprocess a source file
-assign_from_classes.i:
-	$(MAKE) -f CMakeFiles/gamma_lib.dir/build.make CMakeFiles/gamma_lib.dir/assign_from_classes.i
-.PHONY : assign_from_classes.i
-
-# target to generate assembly for a file
-assign_from_classes.s:
-	$(MAKE) -f CMakeFiles/gamma_lib.dir/build.make CMakeFiles/gamma_lib.dir/assign_from_classes.s
-.PHONY : assign_from_classes.s
-
-# target to build an object file
 function.o:
 	$(MAKE) -f CMakeFiles/gamma_lib.dir/build.make CMakeFiles/gamma_lib.dir/function.o
 .PHONY : function.o
@@ -235,9 +220,6 @@ help:
 	@echo "... gamma"
 	@echo "... gamma_lib"
 	@echo "... libjsoncpp"
-	@echo "... assign_from_classes.o"
-	@echo "... assign_from_classes.i"
-	@echo "... assign_from_classes.s"
 	@echo "... function.o"
 	@echo "... function.i"
 	@echo "... function.s"
