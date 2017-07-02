@@ -30,8 +30,6 @@
 
 ..//GAhhhh_dmix_th.c
 
-..//assign_from_classes.h
-
 ..//cleo_K3pi_kpipi0_6d.c
 
 ..//function.h
@@ -240,8 +238,6 @@ function.h
 prob.c
 -
 measures_classes.h
--
-assign_from_classes.h
 -
 initialize.c
 -
