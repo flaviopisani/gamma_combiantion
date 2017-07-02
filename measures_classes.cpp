@@ -35,7 +35,7 @@ void Ggsz :: assign_from_json (char* json_file) {
 		}
 	}
 
-	else {}
+	else {exit(EXIT_FAILURE);}
 
 }
 
