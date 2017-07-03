@@ -9,6 +9,7 @@ from tkinter.filedialog import asksaveasfile
 from tkinter.filedialog import askopenfile
 import json
 import os
+from decimal import Decimal
 #################################################################################################################################### ########## Classi e Funzioni #################################################################################################### #################################################################################################################################
 class Database:
 ############## membri ##########################################################################################################
@@ -286,23 +287,23 @@ class Database:
 
 		for observable in self.observables_names[a]:
 			self.measures[self.measures_names[a]]['%s_paper_%i'%(self.measures_names[a],b)][observable] = {}
-			self.measures[self.measures_names[a]]['%s_paper_%i'%(self.measures_names[a],b)][observable]['value'] = self.entry_list[count_entry].get()
+			self.measures[self.measures_names[a]]['%s_paper_%i'%(self.measures_names[a],b)][observable]['value'] = float (self.entry_list[count_entry].get())
 			count_entry = count_entry+1
 			#print (self.measures[self.measures_names[a]]['%s_paper_%i'%(self.measures_names[a],b)][observable]['value'])
-			self.measures[self.measures_names[a]]['%s_paper_%i'%(self.measures_names[a],b)][observable]['stat'] = self.entry_list[count_entry].get()
+			self.measures[self.measures_names[a]]['%s_paper_%i'%(self.measures_names[a],b)][observable]['stat'] = float (self.entry_list[count_entry].get())
 			count_entry = count_entry+1
 			#print (self.measures[self.measures_names[a]]['%s_paper_%i'%(self.measures_names[a],b)][observable]['stat'])		
-			self.measures[self.measures_names[a]]['%s_paper_%i'%(self.measures_names[a],b)][observable]['sys'] = self.entry_list[count_entry].get()
+			self.measures[self.measures_names[a]]['%s_paper_%i'%(self.measures_names[a],b)][observable]['sys'] = float (self.entry_list[count_entry].get())
 			count_entry = count_entry+1
 			#print (self.measures[self.measures_names[a]]['%s_paper_%i'%(self.measures_names[a],b)][observable]['sys'])
 
 		for entry in self.entry_list_stat:
-			self.measures[self.measures_names[a]]['%s_paper_%i'%(self.measures_names[a],b)]['corr_Stat_paper_%i'%(b)].append(entry.get())
+			self.measures[self.measures_names[a]]['%s_paper_%i'%(self.measures_names[a],b)]['corr_Stat_paper_%i'%(b)].append(float(entry.get()))
 		#for element in self.measures[self.measures_names[a]]['%s_paper_%i'%(self.measures_names[a],b)]['corr_Stat_paper_%i'%(b)]:
 			#print (element) 
 
 		for entry in self.entry_list_sys:
-			self.measures[self.measures_names[a]]['%s_paper_%i'%(self.measures_names[a],b)]['corr_Sys_paper_%i'%(b)].append(entry.get())
+			self.measures[self.measures_names[a]]['%s_paper_%i'%(self.measures_names[a],b)]['corr_Sys_paper_%i'%(b)].append(float(entry.get()))
 		#for element in self.measures[self.measures_names[a]]['%s_paper_%i'%(self.measures_names[a],b)]['corr_Sys_paper_%i'%(b)]:
 			#print (element) 
 #########################################################################################################################################
