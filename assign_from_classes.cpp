@@ -42,4 +42,35 @@ void assign_from_classes (char* json_file) {
 		}
 	}
 
+
+cout << x_plus << endl;
+cout << x_minus << endl;
+cout << y_plus << endl;
+cout << y_minus << endl;
+cout << x_plus_stat_err << endl;
+cout << x_minus_stat_err << endl;
+cout << y_plus_stat_err << endl;
+cout << y_minus_stat_err << endl;
+cout << x_plus_syst_err << endl;
+cout << x_minus_syst_err << endl;
+cout << y_plus_syst_err << endl;
+cout << y_minus_syst_err << endl;
+
+	for (int i=0; i<4; i++){
+		for (int j=0; j<4; j++) {
+			cout << corrStatGGSZ(i,j) << endl;
+			
+		}
+	}
+
+	for (int i=0; i<4; i++){
+		for (int j=0; j<4; j++) {
+			cout << corrSystGGSZ(i,j) << endl;
+			
+		}
+	}
+
+
+
 }
+

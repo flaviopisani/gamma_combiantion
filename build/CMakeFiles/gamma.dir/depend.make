@@ -13,6 +13,7 @@ CMakeFiles/gamma.dir/gamma.o: ../GAhh.c
 CMakeFiles/gamma.dir/gamma.o: ../GAhh_dmix_th.c
 CMakeFiles/gamma.dir/gamma.o: ../GAhhhh.c
 CMakeFiles/gamma.dir/gamma.o: ../GAhhhh_dmix_th.c
+CMakeFiles/gamma.dir/gamma.o: ../assign_from_classes.h
 CMakeFiles/gamma.dir/gamma.o: ../cleo_K3pi_kpipi0_6d.c
 CMakeFiles/gamma.dir/gamma.o: ../function.h
 CMakeFiles/gamma.dir/gamma.o: ../functions_dmix_th.h
