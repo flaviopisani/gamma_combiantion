@@ -9,7 +9,7 @@
 
 
 
-void assign_from_classes (char* json_file);
+void assign_from_classes (char* );
 
 
 
