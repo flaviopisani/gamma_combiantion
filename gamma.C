@@ -69,7 +69,7 @@ void assign_from_classes (char* json_file) {
 
 	a_ADS_K_KPi = gahh_paper.get_a1();
 	a_CP_DK_KK = gahh_paper.get_a2();
-	a_CP_DK_KK = gahh_paper.get_a3();
+	a_CP_DK_PiPi = gahh_paper.get_a3();
 	a_fav_DK_KPi = gahh_paper.get_a4();
 	r_ADS_K_KPi = gahh_paper.get_r1();
 	r_CP_KK = gahh_paper.get_r2();
@@ -77,7 +77,7 @@ void assign_from_classes (char* json_file) {
 
 	a_ADS_K_KPi_stat_err = gahh_paper.get_a1_st();
 	a_CP_DK_KK_stat_err = gahh_paper.get_a2_st();
-	a_CP_DK_KK_stat_err = gahh_paper.get_a3_st();
+	a_CP_DK_PiPi_stat_err = gahh_paper.get_a3_st();
 	a_fav_DK_KPi_stat_err = gahh_paper.get_a4_st();
 	r_ADS_K_KPi_stat_err = gahh_paper.get_r1_st();
 	r_CP_KK_stat_err = gahh_paper.get_r2_st();
@@ -85,7 +85,7 @@ void assign_from_classes (char* json_file) {
 
 	a_ADS_K_KPi_syst_err = gahh_paper.get_a1_sy();
 	a_CP_DK_KK_syst_err = gahh_paper.get_a2_sy();
-	a_CP_DK_KK_syst_err = gahh_paper.get_a3_sy();
+	a_CP_DK_PiPi_syst_err = gahh_paper.get_a3_sy();
 	a_fav_DK_KPi_syst_err = gahh_paper.get_a4_sy();
 	r_ADS_K_KPi_syst_err = gahh_paper.get_r1_sy();
 	r_CP_KK_syst_err = gahh_paper.get_r2_sy();
@@ -156,6 +156,35 @@ void assign_from_classes (char* json_file) {
 			
 		}
 	}
+
+
+
+
+
+cout << a_ADS_K_KPi << endl;//       = -0.40267; // A_{ADS(K)}^{KPi}
+cout << a_CP_DK_KK << endl;//        = 0.08658; // A_CP^{DK,KPi}
+cout << a_CP_DK_PiPi << endl;//      = 0.12760; // A_CP^{DK,PiPi}
+cout << a_fav_DK_KPi << endl ;//      = -0.01944; // A_{fav}^{DK,KPi}
+cout << r_ADS_K_KPi << endl;//       = 0.01876; // R_{ADS}^{KPi}
+cout << r_CP_KK << endl;//           = 0.96834; // R_{CP}^{KK}
+cout << r_CP_PiPi << endl << endl << endl;// 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 cout << x_plus << endl;
