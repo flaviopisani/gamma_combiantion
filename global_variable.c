@@ -111,17 +111,17 @@ TMatrixDSym corrStatGGSZDKstar0(4), corrSystGGSZDKstar0(4), covStatGGSZDKstar0(4
 
 // GAhhhh
 
-double a_ADS_K_K3Pi  = -0.31291; // A_{ADS(K)}^{KPiPiPi}
-double a_CP_DK_4Pi   =  0.10035; // A_{CP}^{4Pi}
-double a_fav_DK_K3Pi = -0.00042; // A_{fav}^{DK,K3Pi}
-double r_ADS_K_K3Pi  =  0.01399; // R_{ADS(K)}^{KPiPiPi}
-double r_CP_4Pi      =  0.97540; // R_{CP}^{4Pi}
+double a_ADS_K_K3Pi;//  = -0.31291; // A_{ADS(K)}^{KPiPiPi}
+double a_CP_DK_4Pi ;//  =  0.10035; // A_{CP}^{4Pi}
+double a_fav_DK_K3Pi ;//= -0.00042; // A_{fav}^{DK,K3Pi}
+double r_ADS_K_K3Pi  ;//=  0.01399; // R_{ADS(K)}^{KPiPiPi}
+double r_CP_4Pi      ;//=  0.97540; // R_{CP}^{4Pi}
 
-double a_ADS_K_K3Pi_stat_err      = 0.10200;
-double a_CP_DK_4Pi_stat_err       = 0.03360;
-double a_fav_DK_K3Pi_stat_err     = 0.01190;
-double r_ADS_K_K3Pi_stat_err      = 0.00149;
-double r_CP_4Pi_stat_err          = 0.03670;
+double a_ADS_K_K3Pi_stat_err;//      = 0.10200;
+double a_CP_DK_4Pi_stat_err    ;//   = 0.03360;
+double a_fav_DK_K3Pi_stat_err  ;//   = 0.01190;
+double r_ADS_K_K3Pi_stat_err   ;//   = 0.00149;
+double r_CP_4Pi_stat_err       ;//   = 0.03670;
 
 //double a_ADS_K_K3Pi_syst_err      = 0.01500;
 //double a_CP_DK_4Pi_syst_err       = 0.00790;
@@ -129,11 +129,11 @@ double r_CP_4Pi_stat_err          = 0.03670;
 //double r_ADS_K_K3Pi_syst_err      = 0.00041;
 //double r_CP_4Pi_syst_err          = 0.01000;
 
-double a_ADS_K_K3Pi_syst_err      = 0.038;
-double a_CP_DK_4Pi_syst_err       = 0.018;
-double a_fav_DK_K3Pi_syst_err     = 0.002;
-double r_ADS_K_K3Pi_syst_err      = 0.0006;
-double r_CP_4Pi_syst_err          = 0.019;
+double a_ADS_K_K3Pi_syst_err   ;//   = 0.038;
+double a_CP_DK_4Pi_syst_err    ;//   = 0.018;
+double a_fav_DK_K3Pi_syst_err  ;//   = 0.002;
+double r_ADS_K_K3Pi_syst_err   ;//   = 0.0006;
+double r_CP_4Pi_syst_err       ;//   = 0.019;
 
 TVectorD GAhhhh_x_stat_err(5),GAhhhh_x_syst_err(5),GAhhhh_x_err(5);
 TMatrixDSym corStatGAhhhh(5),corSystGAhhhh(5),covStatGAhhhh(5),covSystGAhhhh(5),covGAhhhh(5),corGAhhhh(5);

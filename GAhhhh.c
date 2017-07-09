@@ -39,6 +39,8 @@ GAhhhh_x_err(2)                = sqrt( GAhhhh_x_stat_err(2) * GAhhhh_x_stat_err(
 GAhhhh_x_err(3)                = sqrt( GAhhhh_x_stat_err(3) * GAhhhh_x_stat_err(3) + GAhhhh_x_syst_err(3) * GAhhhh_x_syst_err(3) );
 GAhhhh_x_err(4)                = sqrt( GAhhhh_x_stat_err(4) * GAhhhh_x_stat_err(4) + GAhhhh_x_syst_err(4) * GAhhhh_x_syst_err(4) );
 
+
+/*
 //TMatrixDSym corStatGAhhhh(5);
 //      a_ADS_K_K3Pi         a_CP_DK_4Pi        a_fav_DK_K3Pi           r_ADS_K_K3Pi         r_CP_4Pi
 corStatGAhhhh(0,0)=1.0     ;             corStatGAhhhh(0,1)=0.0018;               corStatGAhhhh(0,2)=0.0064;              corStatGAhhhh(0,3)=0.0821;               corStatGAhhhh(0,4)=0.0020;
@@ -55,7 +57,7 @@ corSystGAhhhh(1,0)=corSystGAhhhh(0,1);  corSystGAhhhh(1,1)=1.0;                c
 corSystGAhhhh(2,0)=corSystGAhhhh(0,2);  corSystGAhhhh(2,1)=corSystGAhhhh(1,2); corSystGAhhhh(2,2)=1.0;                 corSystGAhhhh(2,3)=0.02;                 corSystGAhhhh(2,4)=0.02;
 corSystGAhhhh(3,0)=corSystGAhhhh(0,3);  corSystGAhhhh(3,1)=corSystGAhhhh(1,3); corSystGAhhhh(3,2)=corSystGAhhhh(2,3); corSystGAhhhh(3,3)=1.0;                  corSystGAhhhh(3,4)=0.04;
 corSystGAhhhh(4,0)=corSystGAhhhh(0,4);  corSystGAhhhh(4,1)=corSystGAhhhh(1,4); corSystGAhhhh(4,2)=corSystGAhhhh(2,4); corSystGAhhhh(4,3)=corSystGAhhhh(3,4);  corSystGAhhhh(4,4)=1.0;
-
+*/
 //TMatrixDSym 
 covStatGAhhhh = buildCov(corStatGAhhhh,GAhhhh_x_stat_err);
 //TMatrixDSym 

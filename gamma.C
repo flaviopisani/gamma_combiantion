@@ -158,6 +158,56 @@ void assign_from_classes (char* json_file) {
 	}
 
 
+	//GAhhhh
+	Gahhhh gahhhh_paper;
+	gahhhh_paper.assign_from_json(json_file);
+
+	a_ADS_K_K3Pi = gahhhh_paper.get_a1();
+	a_CP_DK_4Pi = gahhhh_paper.get_a2();
+	a_fav_DK_K3Pi = gahhhh_paper.get_a3();
+	r_ADS_K_K3Pi = gahhhh_paper.get_r1();
+	r_CP_4Pi = gahhhh_paper.get_r2();
+
+	a_ADS_K_K3Pi_stat_err = gahhhh_paper.get_a1_st();
+	a_CP_DK_4Pi_stat_err = gahhhh_paper.get_a2_st();
+	a_fav_DK_K3Pi_stat_err = gahhhh_paper.get_a3_st();
+	r_ADS_K_K3Pi_stat_err = gahhhh_paper.get_r1_st();
+	r_CP_4Pi_stat_err = gahhhh_paper.get_r2_st();
+
+	a_ADS_K_K3Pi_syst_err = gahhhh_paper.get_a1_sy();
+	a_CP_DK_4Pi_syst_err = gahhhh_paper.get_a2_sy();
+	a_fav_DK_K3Pi_syst_err = gahhhh_paper.get_a3_sy();
+	r_ADS_K_K3Pi_syst_err = gahhhh_paper.get_r1_sy();
+	r_CP_4Pi_syst_err = gahhhh_paper.get_r2_sy();
+
+
+
+	//double* pointer_to_matrix_stat;
+	//double* pointer_to_matrix_syst;
+	pointer_to_matrix_stat = gahhhh_paper.get_corrStat();
+	pointer_to_matrix_syst = gahhhh_paper.get_corrSyst();
+
+	for (int i=0; i<5; i++){
+		for (int j=0; j<7; j++) {
+			corStatGAhhhh(i,j) = *pointer_to_matrix_stat;
+			pointer_to_matrix_stat ++;
+			
+		}
+	}
+
+	for (int i=0; i<5; i++){
+		for (int j=0; j<7; j++) {
+			corSystGAhhhh(i,j) = *pointer_to_matrix_syst;
+			pointer_to_matrix_syst ++;
+			
+		}
+	}
+
+
+
+
+
+
 
 
 

@@ -89,5 +89,49 @@ void Ggsz :: assign_from_json (char* json_file) {
 }
 
 
+void Gahhhh :: assign_from_json (char* json_file) {
+
+	std::ifstream ifs(json_file);
+	if (ifs) {
+	Json::Reader reader;
+	Json::Value obj;
+	reader.parse(ifs,obj);
+
+	a1 = obj["GAhhhh"]["GAhhhh_paper_0"]["a_ADS_K_K3Pi"]["value"].asDouble();
+	a2 = obj["GAhhhh"]["GAhhhh_paper_0"]["a_CP_DK_4Pi"]["value"].asDouble();
+	a3 = obj["GAhhhh"]["GAhhhh_paper_0"]["a_fav_DK_K3Pi"]["value"].asDouble();
+	r1 = obj["GAhhhh"]["GAhhhh_paper_0"]["r_ADS_K_K3Pi"]["value"].asDouble();
+	r2 = obj["GAhhhh"]["GAhhhh_paper_0"]["r_CP_4Pi"]["value"].asDouble();
+
+	a1_st = obj["GAhhhh"]["GAhhhh_paper_0"]["a_ADS_K_K3Pi"]["stat"].asDouble();
+	a2_st = obj["GAhhhh"]["GAhhhh_paper_0"]["a_CP_DK_4Pi"]["stat"].asDouble();
+	a3_st = obj["GAhhhh"]["GAhhhh_paper_0"]["a_fav_DK_K3Pi"]["stat"].asDouble();
+	r1_st = obj["GAhhhh"]["GAhhhh_paper_0"]["r_ADS_K_K3Pi"]["stat"].asDouble();
+	r2_st = obj["GAhhhh"]["GAhhhh_paper_0"]["r_CP_4Pi"]["stat"].asDouble();
+
+	a1_sy = obj["GAhhhh"]["GAhhhh_paper_0"]["a_ADS_K_K3Pi"]["sys"].asDouble();
+	a2_sy = obj["GAhhhh"]["GAhhhh_paper_0"]["a_CP_DK_4Pi"]["sys"].asDouble();
+	a3_sy = obj["GAhhhh"]["GAhhhh_paper_0"]["a_fav_DK_K3Pi"]["sys"].asDouble();
+	r1_sy = obj["GAhhhh"]["GAhhhh_paper_0"]["r_ADS_K_K3Pi"]["sys"].asDouble();
+	r2_sy = obj["GAhhhh"]["GAhhhh_paper_0"]["r_CP_4Pi"]["sys"].asDouble();
+
+
+	
+	for (int element=0; element<25;element++) {
+			corrStat[element] = obj["GAhhhh"]["GAhhhh_paper_0"]["corr_Stat_paper_0"][element].asDouble();
+		}
+
+	for (int element=0; element<25;element++) {
+			corrSyst[element] = obj["GAhhhh"]["GAhhhh_paper_0"]["corr_Sys_paper_0"][element].asDouble();
+		}
+	}
+
+	else {exit(EXIT_FAILURE);}
+
+}
+
+
+
+
 
 
