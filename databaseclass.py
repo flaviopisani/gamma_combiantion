@@ -28,7 +28,7 @@ class Database:
 	observables_names[0] =  ['a_ADS_K_KPi','a_CP_DK_KK','a_CP_DK_PiPi','a_fav_DK_KPi','r_ADS_K_KPi','r_CP_KK','r_CP_PiPi']
 	observables_names[1] = ['X+','X-','Y+','Y-']		
 	observables_names[2] = ['a_ADS_K_K3Pi','a_CP_DK_4Pi','a_fav_DK_K3Pi','r_ADS_K_K3Pi','r_CP_4Pi']
-	observables_names[3] = ['a_ADS_DK_KPiPi0','a_CP_DK_KKPi0','a_CP_DK_PiPiPi0','a_fav_DK_KPiPi0', 'r_ADS_K_KPiPi0','r_CP_KKPi0','r_CP_PiPiPi0']
+	observables_names[3] = ['a_ADS_DK_KPiPi0','a_CP_DK_KKPi0','a_CP_DK_PiPiPi0','a_fav_DK_KPiPi0', 'r_ADS_DK_KPiPi0','r_CP_KKPi0','r_CP_PiPiPi0']
 	observables_names[4] = ['r_DK_fos_Ks_KPi','a_fav_DK_KsKPi','a_sup_DK_KsKPi']
 	observables_names[5] = ['r_CP_DKPiPi','a_fav_DKPiPi_KPi','a_CP_DKPiPi_KK','a_CP_DKPiPi_PiPi','r_plus_DKPiPi_KPi','r_minus_DKPiPi_KPi']
 	observables_names[6] = ['C','D_f','D_bar_f','S_f','S_bar_f']

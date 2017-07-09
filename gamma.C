@@ -65,7 +65,7 @@ void assign_from_classes (char* json_file) {
 
 	//GAhh
 	Gahh gahh_paper;
-	gahh_paper.assign_from_json_gahh(json_file);
+	gahh_paper.assign_from_json(json_file);
 
 	a_ADS_K_KPi = gahh_paper.get_v1();
 	a_CP_DK_KK = gahh_paper.get_v2();
@@ -203,7 +203,56 @@ void assign_from_classes (char* json_file) {
 		}
 	}
 
+	//ADhhpi0
+	Adhhpi0 adhhpi0_paper;
+	adhhpi0_paper.assign_from_json(json_file);
 
+	a_ADS_DK_KPiPi0 = adhhpi0_paper.get_v1();
+	a_CP_DK_KKPi0 = adhhpi0_paper.get_v2();
+	a_CP_DK_PiPiPi0 = adhhpi0_paper.get_v3();
+	a_fav_DK_KPiPi0 = adhhpi0_paper.get_v4();
+	r_ADS_DK_KPiPi0 = adhhpi0_paper.get_v5();
+	r_CP_KKPi0 = adhhpi0_paper.get_v6();
+	r_CP_PiPiPi0 = adhhpi0_paper.get_v7();
+
+	a_ADS_DK_KPiPi0_stat_err = adhhpi0_paper.get_v1_st();
+	a_CP_DK_KKPi0_stat_err = adhhpi0_paper.get_v2_st();
+	a_CP_DK_PiPiPi0_stat_err = adhhpi0_paper.get_v3_st();
+	a_fav_DK_KPiPi0_stat_err = adhhpi0_paper.get_v4_st();
+	r_ADS_DK_KPiPi0_stat_err = adhhpi0_paper.get_v5_st();
+	r_CP_KKPi0_stat_err = adhhpi0_paper.get_v6_st();
+	r_CP_PiPiPi0_stat_err = adhhpi0_paper.get_v7_st();
+
+	a_ADS_DK_KPiPi0_syst_err = adhhpi0_paper.get_v1_sy();
+	a_CP_DK_KKPi0_syst_err = adhhpi0_paper.get_v2_sy();
+	a_CP_DK_PiPiPi0_syst_err = adhhpi0_paper.get_v3_sy();
+	a_fav_DK_KPiPi0_syst_err = adhhpi0_paper.get_v4_sy();
+	r_ADS_DK_KPiPi0_syst_err = adhhpi0_paper.get_v5_sy();
+	r_CP_KKPi0_syst_err = adhhpi0_paper.get_v6_sy();
+	r_CP_PiPiPi0_syst_err = adhhpi0_paper.get_v7_sy();
+
+
+
+	//double* pointer_to_matrix_stat;
+	//double* pointer_to_matrix_syst;
+	pointer_to_matrix_stat = adhhpi0_paper.get_corrStat();
+	pointer_to_matrix_syst = adhhpi0_paper.get_corrSyst();
+
+	for (int i=0; i<7; i++){
+		for (int j=0; j<7; j++) {
+			corStatADhhpi0(i,j) = *pointer_to_matrix_stat;
+			pointer_to_matrix_stat ++;
+			
+		}
+	}
+
+	for (int i=0; i<7; i++){
+		for (int j=0; j<7; j++) {
+			corSystADhhpi0(i,j) = *pointer_to_matrix_syst;
+			pointer_to_matrix_syst ++;
+			
+		}
+	}
 
 
 

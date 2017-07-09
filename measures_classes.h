@@ -6,7 +6,7 @@
 
 
 
-//mother class
+//parent class
 
 class Measures {
 
@@ -55,8 +55,7 @@ class Measures {
 
 class Gahh : public Measures{
 	public:
-	void assign_from_json_gahh (char* json_file);
-	void assign_from_json_adhh (char* json_file);
+	void assign_from_json (char* json_file);
 };
 
 
@@ -71,7 +70,10 @@ class Gahhhh : public Measures{
 	void assign_from_json (char* json_file);
 };
 
-
+class Adhhpi0 : public Measures{
+	public:
+	void assign_from_json (char* json_file);
+};
 
 
 
