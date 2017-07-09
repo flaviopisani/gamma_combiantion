@@ -53,7 +53,7 @@ ADhhpi0_x_err(5)                = sqrt( ADhhpi0_x_stat_err(5) * ADhhpi0_x_stat_e
 ADhhpi0_x_err(6)                = sqrt( ADhhpi0_x_stat_err(6) * ADhhpi0_x_stat_err(6) + ADhhpi0_x_syst_err(6) * ADhhpi0_x_syst_err(6) );
 
 
-
+/*
 
 //TMatrixDSym corStatADhhpi0(7);
 //      a_ADS_K_KPiPi0          a_CP_DK_KKPi0           a_CP_DK_PiPiPi0         a_fav_DK_KPiPi0         r_ADS_K_KPiPi0          r_CP_KKPi0              r_CP_PiPiPi0
@@ -75,6 +75,7 @@ corSystADhhpi0(3,0)=corSystADhhpi0(0,3);  corSystADhhpi0(3,1)=corSystADhhpi0(1,3
 corSystADhhpi0(4,0)=corSystADhhpi0(0,4);  corSystADhhpi0(4,1)=corSystADhhpi0(1,4);  corSystADhhpi0(4,2)=corSystADhhpi0(2,4);  corSystADhhpi0(4,3)=corSystADhhpi0(3,4);  corSystADhhpi0(4,4)=1.0;                  corSystADhhpi0(4,5)=-0.03;               corSystADhhpi0(4,6)=-0.02;
 corSystADhhpi0(5,0)=corSystADhhpi0(0,5);  corSystADhhpi0(5,1)=corSystADhhpi0(1,5);  corSystADhhpi0(5,2)=corSystADhhpi0(2,5);  corSystADhhpi0(5,3)=corSystADhhpi0(3,5);  corSystADhhpi0(5,4)=corSystADhhpi0(4,5);  corSystADhhpi0(5,5)=1.0;                 corSystADhhpi0(5,6)=0.38;
 corSystADhhpi0(6,0)=corSystADhhpi0(0,6);  corSystADhhpi0(6,1)=corSystADhhpi0(1,6);  corSystADhhpi0(6,2)=corSystADhhpi0(2,6);  corSystADhhpi0(6,3)=corSystADhhpi0(3,6);  corSystADhhpi0(6,4)=corSystADhhpi0(4,6);  corSystADhhpi0(6,5)=corSystADhhpi0(5,6); corSystADhhpi0(6,6)=1.0;
+*/
 
 //TMatrixDSym 
 covStatADhhpi0 = buildCov(corStatADhhpi0,ADhhpi0_x_stat_err);

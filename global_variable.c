@@ -142,29 +142,29 @@ TMatrixDSym corStatGAhhhh(5),corSystGAhhhh(5),covStatGAhhhh(5),covSystGAhhhh(5),
 
 // ADhhpi0
 
-double a_ADS_DK_KPiPi0   = -0.20000; // A_{ADS(K)}^{KPi}
-double a_CP_DK_KKPi0    =  0.30000; // A_CP^{DK,KPi}
-double a_CP_DK_PiPiPi0  =  0.05400; // A_CP^{DK,PiPi}
-double a_fav_DK_KPiPi0  =  0.01000; // A_{fav}^{DK,KPi}
-double r_ADS_DK_KPiPi0   =  0.01400; // R_{ADS}^{KPi}
-double r_CP_KKPi0       =  0.95000; // R_{CP}^{KK}
-double r_CP_PiPiPi0     =  0.98000; // R_{CP}^{PiPi}
+double a_ADS_DK_KPiPi0 ;//  = -0.20000; // A_{ADS(K)}^{KPi}
+double a_CP_DK_KKPi0 ;//   =  0.30000; // A_CP^{DK,KPi}
+double a_CP_DK_PiPiPi0  ;//=  0.05400; // A_CP^{DK,PiPi}
+double a_fav_DK_KPiPi0 ;// =  0.01000; // A_{fav}^{DK,KPi}
+double r_ADS_DK_KPiPi0   ;//=  0.01400; // R_{ADS}^{KPi}
+double r_CP_KKPi0       ;//=  0.95000; // R_{CP}^{KK}
+double r_CP_PiPiPi0     ;//=  0.98000; // R_{CP}^{PiPi}
 
-double a_ADS_DK_KPiPi0_stat_err       = 0.27000;
-double a_CP_DK_KKPi0_stat_err        = 0.20000;
-double a_CP_DK_PiPiPi0_stat_err      = 0.09100;
-double a_fav_DK_KPiPi0_stat_err      = 0.02600;
-double r_ADS_DK_KPiPi0_stat_err       = 0.00470;
-double r_CP_KKPi0_stat_err           = 0.22000;
-double r_CP_PiPiPi0_stat_err         = 0.11000;
+double a_ADS_DK_KPiPi0_stat_err ;//      = 0.27000;
+double a_CP_DK_KKPi0_stat_err      ;//  = 0.20000;
+double a_CP_DK_PiPiPi0_stat_err    ;//  = 0.09100;
+double a_fav_DK_KPiPi0_stat_err    ;//  = 0.02600;
+double r_ADS_DK_KPiPi0_stat_err    ;//   = 0.00470;
+double r_CP_KKPi0_stat_err         ;//  = 0.22000;
+double r_CP_PiPiPi0_stat_err       ;//  = 0.11000;
 
-double a_ADS_DK_KPiPi0_syst_err       = 0.04000;
-double a_CP_DK_KKPi0_syst_err        = 0.02000;
-double a_CP_DK_PiPiPi0_syst_err      = 0.01100;
-double a_fav_DK_KPiPi0_syst_err      = 0.00500;
-double r_ADS_DK_KPiPi0_syst_err       = 0.00210;
-double r_CP_KKPi0_syst_err           = 0.05000;
-double r_CP_PiPiPi0_syst_err         = 0.05000;
+double a_ADS_DK_KPiPi0_syst_err    ;//   = 0.04000;
+double a_CP_DK_KKPi0_syst_err      ;//  = 0.02000;
+double a_CP_DK_PiPiPi0_syst_err    ;//  = 0.01100;
+double a_fav_DK_KPiPi0_syst_err    ;//  = 0.00500;
+double r_ADS_DK_KPiPi0_syst_err    ;//   = 0.00210;
+double r_CP_KKPi0_syst_err         ;//  = 0.05000;
+double r_CP_PiPiPi0_syst_err       ;//  = 0.05000;
 
 TVectorD ADhhpi0_x_stat_err(7),ADhhpi0_x_syst_err(7),ADhhpi0_x_err(7);
 TMatrixDSym corStatADhhpi0(7),corSystADhhpi0(7),covStatADhhpi0(7),covSystADhhpi0(7),covADhhpi0(7),corADhhpi0(7);

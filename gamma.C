@@ -65,31 +65,31 @@ void assign_from_classes (char* json_file) {
 
 	//GAhh
 	Gahh gahh_paper;
-	gahh_paper.assign_from_json(json_file);
+	gahh_paper.assign_from_json_gahh(json_file);
 
-	a_ADS_K_KPi = gahh_paper.get_a1();
-	a_CP_DK_KK = gahh_paper.get_a2();
-	a_CP_DK_PiPi = gahh_paper.get_a3();
-	a_fav_DK_KPi = gahh_paper.get_a4();
-	r_ADS_K_KPi = gahh_paper.get_r1();
-	r_CP_KK = gahh_paper.get_r2();
-	r_CP_PiPi = gahh_paper.get_r3();
+	a_ADS_K_KPi = gahh_paper.get_v1();
+	a_CP_DK_KK = gahh_paper.get_v2();
+	a_CP_DK_PiPi = gahh_paper.get_v3();
+	a_fav_DK_KPi = gahh_paper.get_v4();
+	r_ADS_K_KPi = gahh_paper.get_v5();
+	r_CP_KK = gahh_paper.get_v6();
+	r_CP_PiPi = gahh_paper.get_v7();
 
-	a_ADS_K_KPi_stat_err = gahh_paper.get_a1_st();
-	a_CP_DK_KK_stat_err = gahh_paper.get_a2_st();
-	a_CP_DK_PiPi_stat_err = gahh_paper.get_a3_st();
-	a_fav_DK_KPi_stat_err = gahh_paper.get_a4_st();
-	r_ADS_K_KPi_stat_err = gahh_paper.get_r1_st();
-	r_CP_KK_stat_err = gahh_paper.get_r2_st();
-	r_CP_PiPi_stat_err = gahh_paper.get_r3_st();
+	a_ADS_K_KPi_stat_err = gahh_paper.get_v1_st();
+	a_CP_DK_KK_stat_err = gahh_paper.get_v2_st();
+	a_CP_DK_PiPi_stat_err = gahh_paper.get_v3_st();
+	a_fav_DK_KPi_stat_err = gahh_paper.get_v4_st();
+	r_ADS_K_KPi_stat_err = gahh_paper.get_v5_st();
+	r_CP_KK_stat_err = gahh_paper.get_v6_st();
+	r_CP_PiPi_stat_err = gahh_paper.get_v7_st();
 
-	a_ADS_K_KPi_syst_err = gahh_paper.get_a1_sy();
-	a_CP_DK_KK_syst_err = gahh_paper.get_a2_sy();
-	a_CP_DK_PiPi_syst_err = gahh_paper.get_a3_sy();
-	a_fav_DK_KPi_syst_err = gahh_paper.get_a4_sy();
-	r_ADS_K_KPi_syst_err = gahh_paper.get_r1_sy();
-	r_CP_KK_syst_err = gahh_paper.get_r2_sy();
-	r_CP_PiPi_syst_err = gahh_paper.get_r3_sy();
+	a_ADS_K_KPi_syst_err = gahh_paper.get_v1_sy();
+	a_CP_DK_KK_syst_err = gahh_paper.get_v2_sy();
+	a_CP_DK_PiPi_syst_err = gahh_paper.get_v3_sy();
+	a_fav_DK_KPi_syst_err = gahh_paper.get_v4_sy();
+	r_ADS_K_KPi_syst_err = gahh_paper.get_v5_sy();
+	r_CP_KK_syst_err = gahh_paper.get_v6_sy();
+	r_CP_PiPi_syst_err = gahh_paper.get_v7_sy();
 
 
 
@@ -121,25 +121,25 @@ void assign_from_classes (char* json_file) {
 	Ggsz ggsz_paper;
 	ggsz_paper.assign_from_json(json_file);
 
-	x_plus = ggsz_paper.get_x_plus_class();
-	x_minus = ggsz_paper.get_x_minus_class();
-	y_plus = ggsz_paper.get_y_plus_class();
-	y_minus = ggsz_paper.get_y_minus_class();
+	x_plus = ggsz_paper.get_v1();
+	x_minus = ggsz_paper.get_v2();
+	y_plus = ggsz_paper.get_v3();
+	y_minus = ggsz_paper.get_v4();
 
-	x_plus_stat_err = ggsz_paper.get_x_plus_stat_err_class();
-	x_minus_stat_err = ggsz_paper.get_x_minus_stat_err_class();
-	y_plus_stat_err = ggsz_paper.get_y_plus_stat_err_class();
-	y_minus_stat_err = ggsz_paper.get_y_minus_stat_err_class();
+	x_plus_stat_err = ggsz_paper.get_v1_st();
+	x_minus_stat_err = ggsz_paper.get_v2_st();
+	y_plus_stat_err = ggsz_paper.get_v3_st();
+	y_minus_stat_err = ggsz_paper.get_v4_st();
 
-	x_plus_syst_err = ggsz_paper.get_x_plus_syst_err_class();
-	x_minus_syst_err = ggsz_paper.get_x_minus_syst_err_class();
-	y_plus_syst_err = ggsz_paper.get_y_plus_syst_err_class();
-	y_minus_syst_err = ggsz_paper.get_y_minus_syst_err_class();
+	x_plus_syst_err = ggsz_paper.get_v1_sy();
+	x_minus_syst_err = ggsz_paper.get_v2_sy();
+	y_plus_syst_err = ggsz_paper.get_v3_sy();
+	y_minus_syst_err = ggsz_paper.get_v4_sy();
 
 	//double* pointer_to_matrix_stat;
 	//double* pointer_to_matrix_syst;
-	pointer_to_matrix_stat = ggsz_paper.get_corrStatGGSZ_class();
-	pointer_to_matrix_syst = ggsz_paper.get_corrSystGGSZ_class();
+	pointer_to_matrix_stat = ggsz_paper.get_corrStat();
+	pointer_to_matrix_syst = ggsz_paper.get_corrSyst();
 
 	for (int i=0; i<4; i++){
 		for (int j=0; j<4; j++) {
@@ -162,23 +162,23 @@ void assign_from_classes (char* json_file) {
 	Gahhhh gahhhh_paper;
 	gahhhh_paper.assign_from_json(json_file);
 
-	a_ADS_K_K3Pi = gahhhh_paper.get_a1();
-	a_CP_DK_4Pi = gahhhh_paper.get_a2();
-	a_fav_DK_K3Pi = gahhhh_paper.get_a3();
-	r_ADS_K_K3Pi = gahhhh_paper.get_r1();
-	r_CP_4Pi = gahhhh_paper.get_r2();
+	a_ADS_K_K3Pi = gahhhh_paper.get_v1();
+	a_CP_DK_4Pi = gahhhh_paper.get_v2();
+	a_fav_DK_K3Pi = gahhhh_paper.get_v3();
+	r_ADS_K_K3Pi = gahhhh_paper.get_v4();
+	r_CP_4Pi = gahhhh_paper.get_v5();
 
-	a_ADS_K_K3Pi_stat_err = gahhhh_paper.get_a1_st();
-	a_CP_DK_4Pi_stat_err = gahhhh_paper.get_a2_st();
-	a_fav_DK_K3Pi_stat_err = gahhhh_paper.get_a3_st();
-	r_ADS_K_K3Pi_stat_err = gahhhh_paper.get_r1_st();
-	r_CP_4Pi_stat_err = gahhhh_paper.get_r2_st();
+	a_ADS_K_K3Pi_stat_err = gahhhh_paper.get_v1_st();
+	a_CP_DK_4Pi_stat_err = gahhhh_paper.get_v2_st();
+	a_fav_DK_K3Pi_stat_err = gahhhh_paper.get_v3_st();
+	r_ADS_K_K3Pi_stat_err = gahhhh_paper.get_v4_st();
+	r_CP_4Pi_stat_err = gahhhh_paper.get_v5_st();
 
-	a_ADS_K_K3Pi_syst_err = gahhhh_paper.get_a1_sy();
-	a_CP_DK_4Pi_syst_err = gahhhh_paper.get_a2_sy();
-	a_fav_DK_K3Pi_syst_err = gahhhh_paper.get_a3_sy();
-	r_ADS_K_K3Pi_syst_err = gahhhh_paper.get_r1_sy();
-	r_CP_4Pi_syst_err = gahhhh_paper.get_r2_sy();
+	a_ADS_K_K3Pi_syst_err = gahhhh_paper.get_v1_sy();
+	a_CP_DK_4Pi_syst_err = gahhhh_paper.get_v2_sy();
+	a_fav_DK_K3Pi_syst_err = gahhhh_paper.get_v3_sy();
+	r_ADS_K_K3Pi_syst_err = gahhhh_paper.get_v4_sy();
+	r_CP_4Pi_syst_err = gahhhh_paper.get_v5_sy();
 
 
 
