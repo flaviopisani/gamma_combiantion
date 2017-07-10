@@ -144,7 +144,7 @@ void Adhhpi0 :: assign_from_json (char* json_file) {
 	v2 = obj["ADhhPi0"]["ADhhPi0_paper_0"]["a_CP_DK_KKPi0"]["value"].asDouble();
 	v3 = obj["ADhhPi0"]["ADhhPi0_paper_0"]["a_CP_DK_PiPiPi0"]["value"].asDouble();
 	v4 = obj["ADhhPi0"]["ADhhPi0_paper_0"]["a_fav_DK_KPiPi0"]["value"].asDouble();
-	v5 = obj["ADhhPi0"]["ADhhPi0_paper_0"]["r_ADS_K_KPiPi0"]["value"].asDouble();
+	v5 = obj["ADhhPi0"]["ADhhPi0_paper_0"]["r_ADS_DK_KPiPi0"]["value"].asDouble();
 	v6 = obj["ADhhPi0"]["ADhhPi0_paper_0"]["r_CP_KKPi0"]["value"].asDouble();
 	v7 = obj["ADhhPi0"]["ADhhPi0_paper_0"]["r_CP_PiPiPi0"]["value"].asDouble();
 
@@ -152,7 +152,7 @@ void Adhhpi0 :: assign_from_json (char* json_file) {
 	v2_st = obj["ADhhPi0"]["ADhhPi0_paper_0"]["a_CP_DK_KKPi0"]["stat"].asDouble();
 	v3_st = obj["ADhhPi0"]["ADhhPi0_paper_0"]["a_CP_DK_PiPiPi0"]["stat"].asDouble();
 	v4_st = obj["ADhhPi0"]["ADhhPi0_paper_0"]["a_fav_DK_KPiPi0"]["stat"].asDouble();
-	v5_st = obj["ADhhPi0"]["ADhhPi0_paper_0"]["r_ADS_K_KPiPi0"]["stat"].asDouble();
+	v5_st = obj["ADhhPi0"]["ADhhPi0_paper_0"]["r_ADS_DK_KPiPi0"]["stat"].asDouble();
 	v6_st = obj["ADhhPi0"]["ADhhPi0_paper_0"]["r_CP_KKPi0"]["stat"].asDouble();
 	v7_st = obj["ADhhPi0"]["ADhhPi0_paper_0"]["r_CP_PiPiPi0"]["stat"].asDouble();
 
@@ -160,7 +160,7 @@ void Adhhpi0 :: assign_from_json (char* json_file) {
 	v2_sy = obj["ADhhPi0"]["ADhhPi0_paper_0"]["a_CP_DK_KKPi0"]["sys"].asDouble();
 	v3_sy = obj["ADhhPi0"]["ADhhPi0_paper_0"]["a_CP_DK_PiPiPi0"]["sys"].asDouble();
 	v4_sy = obj["ADhhPi0"]["ADhhPi0_paper_0"]["a_fav_DK_KPiPi0"]["sys"].asDouble();
-	v5_sy = obj["ADhhPi0"]["ADhhPi0_paper_0"]["r_ADS_K_KPiPi0"]["sys"].asDouble();
+	v5_sy = obj["ADhhPi0"]["ADhhPi0_paper_0"]["r_ADS_DK_KPiPi0"]["sys"].asDouble();
 	v6_sy = obj["ADhhPi0"]["ADhhPi0_paper_0"]["r_CP_KKPi0"]["sys"].asDouble();
 	v7_sy = obj["ADhhPi0"]["ADhhPi0_paper_0"]["r_CP_PiPiPi0"]["sys"].asDouble();
 

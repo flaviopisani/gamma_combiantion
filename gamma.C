@@ -188,7 +188,7 @@ void assign_from_classes (char* json_file) {
 	pointer_to_matrix_syst = gahhhh_paper.get_corrSyst();
 
 	for (int i=0; i<5; i++){
-		for (int j=0; j<7; j++) {
+		for (int j=0; j<5; j++) {
 			corStatGAhhhh(i,j) = *pointer_to_matrix_stat;
 			pointer_to_matrix_stat ++;
 			
