@@ -42,7 +42,7 @@ BsDsK_x_err(2)                = sqrt( BsDsK_x_stat_err(2) * BsDsK_x_stat_err(2) 
 BsDsK_x_err(3)                = sqrt( BsDsK_x_stat_err(3) * BsDsK_x_stat_err(3) + BsDsK_x_syst_err(3) * BsDsK_x_syst_err(3) );
 BsDsK_x_err(4)                = sqrt( BsDsK_x_stat_err(4) * BsDsK_x_stat_err(4) + BsDsK_x_syst_err(4) * BsDsK_x_syst_err(4) );
 
-
+/*
 //TMatrixDSym corStatBsDsK(5);
 //      C                               D_f                             D_bar_f                         S_f                             S_bar_f
 corStatBsDsK(0,0)=1.0;                  corStatBsDsK(0,1)=-0.084;               corStatBsDsK(0,2)=-0.103;               corStatBsDsK(0,3)=-0.008;                corStatBsDsK(0,4)=0.045;
@@ -59,6 +59,8 @@ corSystBsDsK(1,0)=corSystBsDsK(0,1);    corSystBsDsK(1,1)=1.0;                  
 corSystBsDsK(2,0)=corSystBsDsK(0,2);    corSystBsDsK(2,1)=corSystBsDsK(1,2);    corSystBsDsK(2,2)=1.0;                  corSystBsDsK(2,3)=0.17;                 corSystBsDsK(2,4)=-0.14;
 corSystBsDsK(3,0)=corSystBsDsK(0,3);    corSystBsDsK(3,1)=corSystBsDsK(1,3);    corSystBsDsK(3,2)=corSystBsDsK(2,3);    corSystBsDsK(3,3)=1.0;                   corSystBsDsK(3,4)=-0.09;
 corSystBsDsK(4,0)=corSystBsDsK(0,4);    corSystBsDsK(4,1)=corSystBsDsK(1,4);    corSystBsDsK(4,2)=corSystBsDsK(2,4);    corSystBsDsK(4,3)=corSystBsDsK(3,4);     corSystBsDsK(4,4)=1.0;
+*/
+
 
 //TMatrixDSym 
 covStatBsDsK = buildCov(corStatBsDsK,BsDsK_x_stat_err);

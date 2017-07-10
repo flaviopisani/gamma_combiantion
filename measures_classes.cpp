@@ -180,5 +180,47 @@ void Adhhpi0 :: assign_from_json (char* json_file) {
 }
 
 
+void Bsdsk :: assign_from_json (char* json_file) {
+
+	std::ifstream ifs(json_file);
+	if (ifs) {
+	Json::Reader reader;
+	Json::Value obj;
+	reader.parse(ifs,obj);
+
+	v1 = obj["BsDsK"]["BsDsK_paper_0"]["C"]["value"].asDouble();
+	v2 = obj["BsDsK"]["BsDsK_paper_0"]["D_bar_f"]["value"].asDouble();
+	v3 = obj["BsDsK"]["BsDsK_paper_0"]["D_f"]["value"].asDouble();
+	v4 = obj["BsDsK"]["BsDsK_paper_0"]["S_bar_f"]["value"].asDouble();
+	v5 = obj["BsDsK"]["BsDsK_paper_0"]["S_f"]["value"].asDouble();
+
+	v1_st = obj["BsDsK"]["BsDsK_paper_0"]["C"]["stat"].asDouble();
+	v2_st = obj["BsDsK"]["BsDsK_paper_0"]["D_bar_f"]["stat"].asDouble();
+	v3_st = obj["BsDsK"]["BsDsK_paper_0"]["D_f"]["stat"].asDouble();
+	v4_st = obj["BsDsK"]["BsDsK_paper_0"]["S_bar_f"]["stat"].asDouble();
+	v5_st = obj["BsDsK"]["BsDsK_paper_0"]["S_f"]["stat"].asDouble();
+
+	v1_sy = obj["BsDsK"]["BsDsK_paper_0"]["C"]["sys"].asDouble();
+	v2_sy = obj["BsDsK"]["BsDsK_paper_0"]["D_bar_f"]["sys"].asDouble();
+	v3_sy = obj["BsDsK"]["BsDsK_paper_0"]["D_f"]["sys"].asDouble();
+	v4_sy = obj["BsDsK"]["BsDsK_paper_0"]["S_bar_f"]["sys"].asDouble();
+	v5_sy = obj["BsDsK"]["BsDsK_paper_0"]["S_f"]["sys"].asDouble();
+
+
+	
+	for (int element=0; element<25;element++) {
+			corrStat[element] = obj["BsDsK"]["BsDsK_paper_0"]["corr_Stat_paper_0"][element].asDouble();
+		}
+
+	for (int element=0; element<25;element++) {
+			corrSyst[element] = obj["BsDsK"]["BsDsK_paper_0"]["corr_Sys_paper_0"][element].asDouble();
+		}
+	}
+
+	else {exit(EXIT_FAILURE);}
+
+}
+
+
 
 

@@ -212,23 +212,23 @@ TVectorD GAKPiPiDhh_x_stat_err(6), GAKPiPiDhh_x_syst_err(6), GAKPiPiDhh_x_err(6)
 
 // BsDsK
 
-double C                =  0.526386;
-double D_f              = -0.369634;
-double D_bar_f          = -0.203693;
-double S_f              = -1.08902;
-double S_bar_f          =  0.356743;
+double C              ;//  =  0.526386;
+double D_f             ;// = -0.369634;
+double D_bar_f         ;// = -0.203693;
+double S_f              ;//= -1.08902;
+double S_bar_f         ;// =  0.356743;
 
-double C_stat_err            = 0.24546;
-double D_f_stat_err          = 0.42274;
-double D_bar_f_stat_err      = 0.41397;
-double S_f_stat_err          = 0.33309;
-double S_bar_f_stat_err      = 0.33495;
+double C_stat_err     ;//       = 0.24546;
+double D_f_stat_err   ;//       = 0.42274;
+double D_bar_f_stat_err;//      = 0.41397;
+double S_f_stat_err       ;//   = 0.33309;
+double S_bar_f_stat_err   ;//   = 0.33495;
 
-double C_syst_err            = 0.04590;
-double D_f_syst_err          = 0.19700;
-double D_bar_f_syst_err      = 0.19457;
-double S_f_syst_err          = 0.07794;
-double S_bar_f_syst_err      = 0.07570;
+double C_syst_err         ;//   = 0.04590;
+double D_f_syst_err       ;//   = 0.19700;
+double D_bar_f_syst_err   ;//   = 0.19457;
+double S_f_syst_err       ;//   = 0.07794;
+double S_bar_f_syst_err   ;//   = 0.07570;
 
 TVectorD BsDsK_x_stat_err(5), BsDsK_x_syst_err(5),BsDsK_x_err(5);
 TMatrixDSym corStatBsDsK(5),corSystBsDsK(5),covStatBsDsK(5),covSystBsDsK(5),covBsDsK(5),corBsDsK(5);

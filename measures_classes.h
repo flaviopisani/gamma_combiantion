@@ -58,12 +58,10 @@ class Gahh : public Measures{
 	void assign_from_json (char* json_file);
 };
 
-
 class Ggsz : public Measures{
 	public:
 	void assign_from_json (char* json_file);
 };
-
 
 class Gahhhh : public Measures{
 	public:
@@ -71,6 +69,11 @@ class Gahhhh : public Measures{
 };
 
 class Adhhpi0 : public Measures{
+	public:
+	void assign_from_json (char* json_file);
+};
+
+class Bsdsk : public Measures{
 	public:
 	void assign_from_json (char* json_file);
 };
