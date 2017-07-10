@@ -222,5 +222,41 @@ void Bsdsk :: assign_from_json (char* json_file) {
 }
 
 
+void Ggszdkpi :: assign_from_json (char* json_file) {
+
+	std::ifstream ifs(json_file);
+	if (ifs) {
+	Json::Reader reader;
+	Json::Value obj;
+	reader.parse(ifs,obj);
+
+	v1 = obj["ggszDKPi"]["ggszDKPi_paper_0"]["X+"]["value"].asDouble();
+	v2 = obj["ggszDKPi"]["ggszDKPi_paper_0"]["X-"]["value"].asDouble();
+	v3 = obj["ggszDKPi"]["ggszDKPi_paper_0"]["Y+"]["value"].asDouble();
+	v4 = obj["ggszDKPi"]["ggszDKPi_paper_0"]["Y-"]["value"].asDouble();
+
+	v1_st = obj["ggszDKPi"]["ggszDKPi_paper_0"]["X+"]["stat"].asDouble();
+	v2_st = obj["ggszDKPi"]["ggszDKPi_paper_0"]["X-"]["stat"].asDouble();
+	v3_st = obj["ggszDKPi"]["ggszDKPi_paper_0"]["Y+"]["stat"].asDouble();
+	v4_st = obj["ggszDKPi"]["ggszDKPi_paper_0"]["Y-"]["stat"].asDouble();
+
+	v1_sy = obj["ggszDKPi"]["ggszDKPi_paper_0"]["X+"]["sys"].asDouble();
+	v2_sy = obj["ggszDKPi"]["ggszDKPi_paper_0"]["X-"]["sys"].asDouble();
+	v3_sy = obj["ggszDKPi"]["ggszDKPi_paper_0"]["Y+"]["sys"].asDouble();	
+	v4_sy = obj["ggszDKPi"]["ggszDKPi_paper_0"]["Y-"]["sys"].asDouble();
+	
+	for (int element=0; element<16;element++) {
+			corrStat[element] = obj["ggszDKPi"]["ggszDKPi_paper_0"]["corr_Stat_paper_0"][element].asDouble();
+		}
+
+	for (int element=0; element<16;element++) {
+			corrSyst[element] = obj["ggszDKPi"]["ggszDKPi_paper_0"]["corr_Sys_paper_0"][element].asDouble();
+		}
+	}
+
+	else {exit(EXIT_FAILURE);}
+
+}
+
 
 

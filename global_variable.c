@@ -81,15 +81,19 @@ TMatrixDSym covStatGGSZ(4),covSystGGSZ(4),covGGSZ(4),corGGSZ(4);
 
 // GGSZ DKPi
 
-double x_DKPi_minus          = -0.02;
-double y_DKPi_minus          = -0.35;
-double x_DKPi_plus           =  0.04;
-double y_DKPi_plus           = -0.47;
+double x_DKPi_minus   ;//       = -0.02;
+double y_DKPi_minus     ;//     = -0.35;
+double x_DKPi_plus      ;//     =  0.04;
+double y_DKPi_plus      ;//     = -0.47;
 
-double x_DKPi_minus_stat_err      = 0.13;  double x_DKPi_minus_syst_err      = 0.14;
-double y_DKPi_minus_stat_err      = 0.26;  double y_DKPi_minus_syst_err      = 0.41;
-double x_DKPi_plus_stat_err       = 0.16;  double x_DKPi_plus_syst_err       = 0.11;
-double y_DKPi_plus_stat_err       = 0.28;  double y_DKPi_plus_syst_err       = 0.22;
+double x_DKPi_minus_stat_err;//      = 0.13;  
+double x_DKPi_minus_syst_err;//      = 0.14;
+double y_DKPi_minus_stat_err   ;//   = 0.26;
+double y_DKPi_minus_syst_err;//      = 0.41;
+double x_DKPi_plus_stat_err    ;//   = 0.16;  
+double x_DKPi_plus_syst_err;//       = 0.11;
+double y_DKPi_plus_stat_err    ;//   = 0.28;  
+double y_DKPi_plus_syst_err ;//      = 0.22;
 
 TVectorD ggsz_DKPi_x_stat_err(4), ggsz_DKPi_x_syst_err(4), ggsz_DKPi_x_err(4);
 TMatrixDSym corrStatGGSZDKPi(4), corrSystGGSZDKPi(4), covStatGGSZDKPi(4),covSystGGSZDKPi(4),covGGSZDKPi(4),corGGSZDKPi(4);
