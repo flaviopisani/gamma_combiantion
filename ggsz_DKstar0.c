@@ -16,6 +16,10 @@ ggsz_DKstar0_x_err(1)                = sqrt( ggsz_DKstar0_x_stat_err(1) * ggsz_D
 ggsz_DKstar0_x_err(2)                = sqrt( ggsz_DKstar0_x_stat_err(2) * ggsz_DKstar0_x_stat_err(2) + ggsz_DKstar0_x_syst_err(2) * ggsz_DKstar0_x_syst_err(2) );
 ggsz_DKstar0_x_err(3)                = sqrt( ggsz_DKstar0_x_stat_err(3) * ggsz_DKstar0_x_stat_err(3) + ggsz_DKstar0_x_syst_err(3) * ggsz_DKstar0_x_syst_err(3) );
 
+
+
+
+/*
 //TMatrixDSym corrStatGGSZ(4);
 //      x_minus                         y_minus                         x_plus                          y_plus
 corrStatGGSZDKstar0(0,0)=1.0;                      corrStatGGSZDKstar0(0,1)=0.143;                    corrStatGGSZDKstar0(0,2)=0.0;                     corrStatGGSZDKstar0(0,3)=0.0;
@@ -29,6 +33,8 @@ corrSystGGSZDKstar0(0,0)=1.0;                      corrSystGGSZDKstar0(0,1)=0.0;
 corrSystGGSZDKstar0(1,0)=corrSystGGSZDKstar0(0,1);    corrSystGGSZDKstar0(1,1)=1.0;                      corrSystGGSZDKstar0(1,2)=0.0;                     corrSystGGSZDKstar0(1,3)=0.0;
 corrSystGGSZDKstar0(2,0)=corrSystGGSZDKstar0(0,2);    corrSystGGSZDKstar0(2,1)=corrSystGGSZDKstar0(1,2);    corrSystGGSZDKstar0(2,2)=1.0;                       corrSystGGSZDKstar0(2,3)=0.0;
 corrSystGGSZDKstar0(3,0)=corrSystGGSZDKstar0(0,3);    corrSystGGSZDKstar0(3,1)=corrSystGGSZDKstar0(1,3);    corrSystGGSZDKstar0(3,2)=corrSystGGSZDKstar0(2,3);     corrSystGGSZDKstar0(3,3)=1.0;
+*/
+
 
 //TMatrixDSym 
 covStatGGSZDKstar0 = buildCov(corrStatGGSZDKstar0,ggsz_DKstar0_x_stat_err);

@@ -83,5 +83,10 @@ class Ggszdkpi : public Measures{
 	void assign_from_json (char* json_file);
 };
 
+class Ggszdkstar0 : public Measures{
+	public:
+	void assign_from_json (char* json_file);
+};
+
 
 #endif

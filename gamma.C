@@ -340,6 +340,46 @@ void assign_from_classes (char* json_file) {
 	}
 
 
+	//ggszDKstar0
+	Ggszdkstar0 ggszDKstar0_paper;
+	ggszDKstar0_paper.assign_from_json(json_file);
+
+	x_DKstar0_plus = ggszDKstar0_paper.get_v1();
+	x_DKstar0_minus = ggszDKstar0_paper.get_v2();
+	y_DKstar0_plus = ggszDKstar0_paper.get_v3();
+	y_DKstar0_minus = ggszDKstar0_paper.get_v4();
+
+	x_DKstar0_plus_stat_err = ggszDKstar0_paper.get_v1_st();
+	x_DKstar0_minus_stat_err = ggszDKstar0_paper.get_v2_st();
+	y_DKstar0_plus_stat_err = ggszDKstar0_paper.get_v3_st();
+	y_DKstar0_minus_stat_err = ggszDKstar0_paper.get_v4_st();
+
+	x_DKstar0_plus_syst_err = ggszDKstar0_paper.get_v1_sy();
+	x_DKstar0_minus_syst_err = ggszDKstar0_paper.get_v2_sy();
+	y_DKstar0_plus_syst_err = ggszDKstar0_paper.get_v3_sy();
+	y_DKstar0_minus_syst_err = ggszDKstar0_paper.get_v4_sy();
+
+	//double* pointer_to_matrix_stat;
+	//double* pointer_to_matrix_syst;
+	pointer_to_matrix_stat = ggszDKstar0_paper.get_corrStat();
+	pointer_to_matrix_syst = ggszDKstar0_paper.get_corrSyst();
+
+	for (int i=0; i<4; i++){
+		for (int j=0; j<4; j++) {
+			corrStatGGSZDKstar0(i,j) = *pointer_to_matrix_stat;
+			pointer_to_matrix_stat ++;
+			
+		}
+	}
+
+	for (int i=0; i<4; i++){
+		for (int j=0; j<4; j++) {
+			corrSystGGSZDKstar0(i,j) = *pointer_to_matrix_syst;
+			pointer_to_matrix_syst ++;
+			
+		}
+	}
+
 
 
 

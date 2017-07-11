@@ -100,15 +100,19 @@ TMatrixDSym corrStatGGSZDKPi(4), corrSystGGSZDKPi(4), covStatGGSZDKPi(4),covSyst
 
 // GGSZ DKstar0
 
-double x_DKstar0_minus          = -0.15;
-double y_DKstar0_minus          =  0.25;
-double x_DKstar0_plus           =  0.05;
-double y_DKstar0_plus           = -0.65;
+double x_DKstar0_minus    ;//      = -0.15;
+double y_DKstar0_minus       ;//   =  0.25;
+double x_DKstar0_plus       ;//    =  0.05;
+double y_DKstar0_plus        ;//   = -0.65;
 
-double x_DKstar0_minus_stat_err      = 0.14;  double x_DKstar0_minus_syst_err      = 0.027;
-double y_DKstar0_minus_stat_err      = 0.15;  double y_DKstar0_minus_syst_err      = 0.056;
-double x_DKstar0_plus_stat_err       = 0.24;  double x_DKstar0_plus_syst_err       = 0.040;
-double y_DKstar0_plus_stat_err       = 0.24;  double y_DKstar0_plus_syst_err       = 0.078;
+double x_DKstar0_minus_stat_err ;//     = 0.14;  
+double x_DKstar0_minus_syst_err;//      = 0.027;
+double y_DKstar0_minus_stat_err   ;//   = 0.15;  
+double y_DKstar0_minus_syst_err ;//     = 0.056;
+double x_DKstar0_plus_stat_err  ;//     = 0.24;  
+double x_DKstar0_plus_syst_err   ;//    = 0.040;
+double y_DKstar0_plus_stat_err  ;//     = 0.24;  
+double y_DKstar0_plus_syst_err  ;//     = 0.078;
 
 TVectorD ggsz_DKstar0_x_stat_err(4), ggsz_DKstar0_x_syst_err(4), ggsz_DKstar0_x_err(4);
 TMatrixDSym corrStatGGSZDKstar0(4), corrSystGGSZDKstar0(4), covStatGGSZDKstar0(4),covSystGGSZDKstar0(4),covGGSZDKstar0(4),corGGSZDKstar0(4);

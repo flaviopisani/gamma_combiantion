@@ -258,5 +258,39 @@ void Ggszdkpi :: assign_from_json (char* json_file) {
 
 }
 
+void Ggszdkstar0 :: assign_from_json (char* json_file) {
 
+	std::ifstream ifs(json_file);
+	if (ifs) {
+	Json::Reader reader;
+	Json::Value obj;
+	reader.parse(ifs,obj);
+
+	v1 = obj["ggszDK*0"]["ggszDK*0_paper_0"]["X+"]["value"].asDouble();
+	v2 = obj["ggszDK*0"]["ggszDK*0_paper_0"]["X-"]["value"].asDouble();
+	v3 = obj["ggszDK*0"]["ggszDK*0_paper_0"]["Y+"]["value"].asDouble();
+	v4 = obj["ggszDK*0"]["ggszDK*0_paper_0"]["Y-"]["value"].asDouble();
+
+	v1_st = obj["ggszDK*0"]["ggszDK*0_paper_0"]["X+"]["stat"].asDouble();
+	v2_st = obj["ggszDK*0"]["ggszDK*0_paper_0"]["X-"]["stat"].asDouble();
+	v3_st = obj["ggszDK*0"]["ggszDK*0_paper_0"]["Y+"]["stat"].asDouble();
+	v4_st = obj["ggszDK*0"]["ggszDK*0_paper_0"]["Y-"]["stat"].asDouble();
+
+	v1_sy = obj["ggszDK*0"]["ggszDK*0_paper_0"]["X+"]["sys"].asDouble();
+	v2_sy = obj["ggszDK*0"]["ggszDK*0_paper_0"]["X-"]["sys"].asDouble();
+	v3_sy = obj["ggszDK*0"]["ggszDK*0_paper_0"]["Y+"]["sys"].asDouble();	
+	v4_sy = obj["ggszDK*0"]["ggszDK*0_paper_0"]["Y-"]["sys"].asDouble();
+	
+	for (int element=0; element<16;element++) {
+			corrStat[element] = obj["ggszDK*0"]["ggszDK*0_paper_0"]["corr_Stat_paper_0"][element].asDouble();
+		}
+
+	for (int element=0; element<16;element++) {
+			corrSyst[element] = obj["ggszDK*0"]["ggszDK*0_paper_0"]["corr_Sys_paper_0"][element].asDouble();
+		}
+	}
+
+	else {exit(EXIT_FAILURE);}
+
+}
 
