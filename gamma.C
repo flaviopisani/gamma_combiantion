@@ -379,6 +379,57 @@ void assign_from_classes (char* json_file) {
 			
 		}
 	}
+/*
+	//GABDKstar
+	Gabdkstar GABDKstar_paper;
+	GABDKstar_paper.assign_from_json(json_file);
+
+	a_fav_DKstar0_KPi = GABDKstar_paper.get_v1();
+	r_plus_DKstar0_KPi = GABDKstar_paper.get_v2();
+	r_minus_DKstar0_KPi = GABDKstar_paper.get_v3();
+
+	a_fav_DKstar0_KPi_stat_err = GABDKstar_paper.get_v1_st();
+	r_plus_DKstar0_KPi_stat_err = GABDKstar_paper.get_v2_st();
+	r_minus_DKstar0_KPi_stat_err = GABDKstar_paper.get_v3_st();
+
+	a_fav_DKstar0_KPi_syst_err = GABDKstar_paper.get_v1_sy();
+	r_plus_DKstar0_KPi_syst_err = GABDKstar_paper.get_v2_sy();
+	r_minus_DKstar0_KPi_syst_err = GABDKstar_paper.get_v3_sy();
+
+	//double* pointer_to_matrix_stat;
+	//double* pointer_to_matrix_syst;
+	pointer_to_matrix_stat = GABDKstar_paper.get_corrStat();
+	pointer_to_matrix_syst = GABDKstar_paper.get_corrSyst();
+
+	for (int i=0; i<3; i++){
+		for (int j=0; j<3; j++) {
+			corStatGABDKstar(i,j) = *pointer_to_matrix_stat;
+			pointer_to_matrix_stat ++;
+			
+		}
+	}
+
+	for (int i=0; i<3; i++){
+		for (int j=0; j<3; j++) {
+			corSystGABDKstar(i,j) = *pointer_to_matrix_syst;
+			pointer_to_matrix_syst ++;
+			
+		}
+	}
+*/
+
+cout <<  a_fav_DKstar0_KPi << endl   ;//     = -0.03200; // A_fav^{DKstar0,KPi}
+cout << r_plus_DKstar0_KPi  << endl   ;//  =  0.05700; // R_{plus}^{DK*0,KPi}
+cout << r_minus_DKstar0_KPi  << endl ;//   =  0.05600; // R_{minus}^{DK*0,KPi}
+
+cout << a_fav_DKstar0_KPi_stat_err<< endl ;//   = 0.041;
+cout << r_plus_DKstar0_KPi_stat_err  << endl;// = 0.029;
+cout << r_minus_DKstar0_KPi_stat_err << endl;// = 0.032;
+
+cout << a_fav_DKstar0_KPi_syst_err  <<endl;//  = 0.020;
+cout << r_plus_DKstar0_KPi_syst_err <<endl;//  = 0.012;
+cout << r_minus_DKstar0_KPi_syst_err << endl << endl << endl;// = 0.012;
+
 
 
 
@@ -543,11 +594,6 @@ assign_from_classes (json_file);
 #include <ggsz_DKPi.c>
   // GGSZ DKStar
 #include <ggsz_DKstar0.c>
-
-
-
-
-
 
   /////////////////////////////////////////////////////////////////////////////
   /////////////////////////////// END INPUTS //////////////////////////////////
@@ -838,6 +884,7 @@ assign_from_classes (json_file);
     outFile->Close();
 
     printf("\n");
+
 
 
   }

@@ -258,7 +258,7 @@ double a_fav_DKstar0_KPi        = -0.03200; // A_fav^{DKstar0,KPi}
 double r_plus_DKstar0_KPi       =  0.05700; // R_{plus}^{DK*0,KPi}
 double r_minus_DKstar0_KPi      =  0.05600; // R_{minus}^{DK*0,KPi}
 
-double a_fav_DKstar0_KPi_stat_err    = 0.041;
+double a_fav_DKstar0_KPi_stat_err   = 0.041;
 double r_plus_DKstar0_KPi_stat_err   = 0.029;
 double r_minus_DKstar0_KPi_stat_err  = 0.032;
 
