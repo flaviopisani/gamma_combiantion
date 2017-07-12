@@ -12,7 +12,7 @@ include_directories(${ROOT_INCLUDE_DIRS})
 include_directories(${GSL_INCLUDE_DIRS})
 include_directories(${CMAKE_CURRENT_SOURCE_DIR})
 
-add_library(gamma_lib STATIC function.cpp functions_dmix_th.cpp measures_classes.cpp)
+add_library(gamma_lib STATIC function.cpp functions_dmix_th.cpp measures_classes.cpp assign_from_classes.cpp)
 target_link_libraries(gamma_lib ${ROOT_LIBRARIES} libjsoncpp)
 
 add_executable(gamma gamma.C)
