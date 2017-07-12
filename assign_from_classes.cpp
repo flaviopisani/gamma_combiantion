@@ -319,7 +319,7 @@ void assign_from_classes (char* json_file) {
 			
 		}
 	}
-
+/*
 	//GABDKstar
 	Gabdkstar GABDKstar_paper;
 	GABDKstar_paper.assign_from_json(json_file);
@@ -356,6 +356,7 @@ void assign_from_classes (char* json_file) {
 			
 		}
 	}
+*/
 }
 
 
