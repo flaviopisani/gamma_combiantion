@@ -1,7 +1,0 @@
-/home/massimiliano/Documents/tirocinio/gamma_combination/build/CMakeFiles/rebuild_cache.dir
-/home/massimiliano/Documents/tirocinio/gamma_combination/build/CMakeFiles/edit_cache.dir
-/home/massimiliano/Documents/tirocinio/gamma_combination/build/CMakeFiles/gamma.dir
-/home/massimiliano/Documents/tirocinio/gamma_combination/build/CMakeFiles/gamma_lib.dir
-/home/massimiliano/Documents/tirocinio/gamma_combination/build/jsoncpp/dist/CMakeFiles/edit_cache.dir
-/home/massimiliano/Documents/tirocinio/gamma_combination/build/jsoncpp/dist/CMakeFiles/rebuild_cache.dir
-/home/massimiliano/Documents/tirocinio/gamma_combination/build/jsoncpp/dist/CMakeFiles/libjsoncpp.dir
