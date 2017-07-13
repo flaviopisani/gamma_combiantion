@@ -149,9 +149,9 @@ class Database:
 			if self.tree_master.parent(self.item_identified) == name:
 				check_variable = True
 		if check_variable == True:
-			self.tree_master.delete(self.item_identified)
+			self.number_of_papers_list[self.measures_names.index(self.tree_master.parent(self.item_identified))] = self.number_of_papers_list[self.measures_names.index(self.tree_master.parent(self.item_identified))]-1
 			del self.measures[self.tree_master.parent(self.item_identified)][self.item_identified]
-			self.number_of_papers_list[j] = self.number_of_papers_list[j]-1
+			self.tree_master.delete(self.item_identified)
 		else:
 			messagebox.showerror("Error", "You can't delete this item")
 ####################################################################################################################################
