@@ -16,15 +16,15 @@ class Database:
 ################################################################################################################################
 #################################################################################################################################
 	# lista di variabili che rappresentano il numero di paper per ogni tipo di misura (si aggiorna ad ogni aggiunta)
-	number_of_papers_list = [0,0,0,0,0,0,0,0,0,0]
+	number_of_papers_list = [0,0,0,0,0,0,0,0,0,0,0,0]
 	# liste degli entries
 	entry_list = []
 	entry_list_stat = []
 	entry_list_sys = []
 	# lista coi nomi delle misure
-	measures_names = ['GAhh','ggsz','GAhhhh','ADhhPi0','GLS','GAKPiPiDhh','BsDsK','GABDK*','ggszDKPi','ggszDK*0']
+	measures_names = ['GAhh','ggsz','GAhhhh','ADhhPi0','GLS','GAKPiPiDhh','BsDsK','GABDK*','ggszDKPi','ggszDK*0','GBD*K+','GABDK*+']
 	# lista coi nomi delle osservabili
-	observables_names = [[],[],[],[],[],[],[],[],[],[]]
+	observables_names = [[],[],[],[],[],[],[],[],[],[],[],[]]
 	observables_names[0] =  ['a_ADS_K_KPi','a_CP_DK_KK','a_CP_DK_PiPi','a_fav_DK_KPi','r_ADS_K_KPi','r_CP_KK','r_CP_PiPi']
 	observables_names[1] = ['X+','X-','Y+','Y-']		
 	observables_names[2] = ['a_ADS_K_K3Pi','a_CP_DK_4Pi','a_fav_DK_K3Pi','r_ADS_K_K3Pi','r_CP_4Pi']
@@ -35,6 +35,8 @@ class Database:
 	observables_names[7] = ['a_fav_DK*0_KPi','r_plus_DK*0_KPi','r_minus_DK*0_KPi']
 	observables_names[8] = ['X+','X-','Y+','Y-']
 	observables_names[9] = ['X+','X-','Y+','Y-']
+	observables_names[10] = ['a_fav_d_gamma','a_fav_d_Pi0','a_cp_d_gamma','a_cp_d_Pi0','r_cp_d_gamma','r_cp_d_Pi0']
+	observables_names[11] = ['a_fav_KPi','a_cp_KK','a_cp_PiPi','r_cp_KK','r_cp_PiPi','r_plus_KPi','r_minus_KPi']
 	# dictionary dei dieci tipi di misure
 	measures = {}
 	for measure_name in measures_names:
@@ -199,7 +201,7 @@ class Database:
 		self.custom_measures = {} # dizionario custom sulla falsa riga di self.measures{}
 		for measure_name in self.measures_names:
 			self.custom_measures[measure_name] = {}
-		self.custom_number_of_papers_list = [0,0,0,0,0,0,0,0,0,0]
+		self.custom_number_of_papers_list = [0,0,0,0,0,0,0,0,0,0,0,0]
 
 
 		self.double_to_add = self.tree_master.bind("<Double-Button-1>", self.add_to_custom_dict)

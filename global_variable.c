@@ -294,6 +294,46 @@ double fphi_s     = -0.010 * 180./M_PI; // grad
 double fphi_s_err = 0.039 * 180./M_PI;  // grad
 
 
+
+
+// GBDstarKp
+
+double a_fav_d_gamma;
+double a_fav_d_Pi0;
+double a_cp_d_gamma;
+double a_cp_d_Pi0;
+double r_cp_d_gamma;
+double r_cp_d_Pi0;
+
+double a_fav_d_gamma_stat;
+double a_fav_d_Pi0_stat;
+double a_cp_d_gamma_stat;
+double a_cp_d_Pi0_stat;
+double r_cp_d_gamma_stat;
+double r_cp_d_Pi0_stat;
+
+double a_fav_d_gamma_syst;
+double a_fav_d_Pi0_syst;
+double a_cp_d_gamma_syst;
+double a_cp_d_Pi0_syst;
+double r_cp_d_gamma_syst;
+double r_cp_d_Pi0_syst;
+
+TMatrixDSym corStatGBDstarKp(6), corSystGBDstarKp(6);
+
+TVectorD GBDstarKp_x_stat_err(6), GBDstarKp_x_syst_err(6), GBDstarKp_x_err(6);
+TMatrixDSym covStatGBDstarKp(6),covSystGBDstarKp(6),covGBDstarKp(6),corGBDstarKp(6);
+
+
+
+
+
+
+
+
+
+
+
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 ////////////////////////////////////// LHCb Charm     ///////////////////////////////////////////////////////////////
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
