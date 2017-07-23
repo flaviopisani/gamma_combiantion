@@ -298,26 +298,26 @@ double fphi_s_err = 0.039 * 180./M_PI;  // grad
 
 // GBDstarKp
 
-double a_fav_d_gamma;
-double a_fav_d_Pi0;
-double a_cp_d_gamma;
-double a_cp_d_Pi0;
-double r_cp_d_gamma;
-double r_cp_d_Pi0;
+double a_fav_D_gamma;
+double a_fav_D_Pi0;
+double a_CP_D_gamma;
+double a_CP_D_Pi0;
+double r_CP_D_gamma;
+double r_CP_D_Pi0;
 
-double a_fav_d_gamma_stat;
-double a_fav_d_Pi0_stat;
-double a_cp_d_gamma_stat;
-double a_cp_d_Pi0_stat;
-double r_cp_d_gamma_stat;
-double r_cp_d_Pi0_stat;
+double a_fav_D_gamma_stat;
+double a_fav_D_Pi0_stat;
+double a_CP_D_gamma_stat;
+double a_CP_D_Pi0_stat;
+double r_CP_D_gamma_stat;
+double r_CP_D_Pi0_stat;
 
-double a_fav_d_gamma_syst;
-double a_fav_d_Pi0_syst;
-double a_cp_d_gamma_syst;
-double a_cp_d_Pi0_syst;
-double r_cp_d_gamma_syst;
-double r_cp_d_Pi0_syst;
+double a_fav_D_gamma_syst;
+double a_fav_D_Pi0_syst;
+double a_CP_D_gamma_syst;
+double a_CP_D_Pi0_syst;
+double r_CP_D_gamma_syst;
+double r_CP_D_Pi0_syst;
 
 TMatrixDSym corStatGBDstarKp(6), corSystGBDstarKp(6);
 

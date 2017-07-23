@@ -35,8 +35,8 @@ class Database:
 	observables_names[7] = ['a_fav_DK*0_KPi','r_plus_DK*0_KPi','r_minus_DK*0_KPi']
 	observables_names[8] = ['X+','X-','Y+','Y-']
 	observables_names[9] = ['X+','X-','Y+','Y-']
-	observables_names[10] = ['a_fav_d_gamma','a_fav_d_Pi0','a_cp_d_gamma','a_cp_d_Pi0','r_cp_d_gamma','r_cp_d_Pi0']
-	observables_names[11] = ['a_fav_KPi','a_cp_KK','a_cp_PiPi','r_cp_KK','r_cp_PiPi','r_plus_KPi','r_minus_KPi']
+	observables_names[10] = ['a_fav_D_gamma','a_fav_D_Pi0','a_CP_D_gamma','a_CP_D_Pi0','r_CP_D_gamma','r_CP_D_Pi0']
+	observables_names[11] = ['a_fav_KPi','a_CP_KK','a_CP_PiPi','r_CP_KK','r_CP_PiPi','r_plus_KPi','r_minus_KPi']
 	# dictionary dei dieci tipi di misure
 	measures = {}
 	for measure_name in measures_names:

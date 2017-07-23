@@ -19,7 +19,9 @@ mode_to_str[6]   =  "BsDsK";
 mode_to_str[7]   =  "GABDKstar";
 mode_to_str[8]   =  "ggszDKPi";
 mode_to_str[9]   =  "ggszDKstar0";
-mode_to_str[10]  =  "tot";
+mode_to_str[10]  =  "GBDstarKp";
+mode_to_str[11]  =  "GABDKstarp";
+mode_to_str[12]  =  "tot";
 
 if(mode ==  mode_to_str[0])   modeNum=0;
 if(mode ==  mode_to_str[1])   modeNum=1;
@@ -32,6 +34,8 @@ if(mode ==  mode_to_str[7])   modeNum=7;
 if(mode ==  mode_to_str[8])   modeNum=8;
 if(mode ==  mode_to_str[9])   modeNum=9;
 if(mode ==  mode_to_str[10])   modeNum=10;
+if(mode ==  mode_to_str[11])   modeNum=11;
+if(mode ==  mode_to_str[12])   modeNum=12;
 
 /////////////////////////////////////////////////////////////////////////////////////////
 ///////////////////////////// Plot definition //////////////////////////////////////////
@@ -69,6 +73,13 @@ var_to_str[28] = "xD";
 var_to_str[29] = "yD";
 var_to_str[30] = "Delta_B_DKstar0";
 var_to_str[31] = "R_B_DKstar0";
+
+var_to_str[32] = "delta_B_DstarK";
+var_to_str[33] = "r_B_DstarK";
+
+var_to_str[34] = "delta_B_DKstar";
+var_to_str[35] = "r_B_DKstar";
+var_to_str[36] = "k_B_DKstar";
 //var_to_str[30] = "R_WS_D_K3Pi";
 //var_to_str[31] = "R_D_KsKPi";
 //var_to_str[32] = "R_WS_D_KPiPi0";
