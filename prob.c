@@ -1,6 +1,6 @@
 double prob( const double * par, int mode = 0) {
 
-  // 32 Parameters
+  // 37 Parameters
   double  a_CP_dir_KK     = par[0];   double  a_CP_dir_PiPi   = par[1];   double  F_plus_KKPi0    = par[2];   double  F_plus_PiPiPi0  = par[3];
   double  F_PiPiPiPi      = par[4];   double  delta_D_K3Pi    = par[5];   double  delta_D_KPi     = par[6];   double  delta_D_KPiPi0  = par[7];
   double  delta_D_KsKPi   = par[8];   double  delta_B_DK      = par[9];   double  delta_B_DKPiPi  = par[10];  double  delta_B_DKstar0 = par[11];
@@ -9,6 +9,12 @@ double prob( const double * par, int mode = 0) {
   double  phi_s           = par[20];  double  r_D_K3Pi        = par[21];  double  r_D_KPi         = par[22];  double  r_D_KPiPi0      = par[23];
   double  r_D_KsKPi       = par[24];  double  r_B_DK          = par[25];  double  r_B_DKPiPi      = par[26];  double  r_B_DKstar0     = par[27];
   double  xD              = par[28];  double  yD              = par[29];  double  Delta_B_DKstar0 = par[30];  double  R_B_DKstar0     = par[31];
+
+double delta_B_DstarK = par[32];
+double r_B_DstarK = par[33];
+double delta_B_DKstar = par[34];
+double r_B_DKstar = par[35];
+double k_B_DKstar = par[36];
 
 
   //  double  R_WS_D_K3Pi     = par[32];
@@ -19,7 +25,6 @@ double prob( const double * par, int mode = 0) {
   double logprob[NMODE];
   for(int i=0; i<NMODE; i++) logprob[i]=0;
   double logprior =0;
-
   
   /////////////////////////////////////////////////////////////////////////////////////////////////////////
   /////////////////////////////////////////// Gaussian priors for the chi2 minimum ////////////////////////
@@ -32,6 +37,8 @@ double prob( const double * par, int mode = 0) {
   logprior+= -0.5 * (k_B_DKstar0    - fk_B_DKstar0    ) * (k_B_DKstar0    - fk_B_DKstar0    )/fk_B_DKstar0_err/fk_B_DKstar0_err;
   logprior+= -0.5 * (R_B_DKstar0    - fR_B_DKstar0    ) * (R_B_DKstar0    - fR_B_DKstar0    )/fR_B_DKstar0_err/fR_B_DKstar0_err;
   logprior+= -0.5 * (Delta_B_DKstar0    - fDelta_B_DKstar0    ) * (Delta_B_DKstar0    - fDelta_B_DKstar0    )/ fDelta_B_DKstar0_err / fDelta_B_DKstar0_err;
+logprior += -0.5 * (k_B_DKstar - 0.954700)*(k_B_DKstar - 0.954700)/0.058781/0.58781;
+
 
   // CLEO KsKPi
   logprior+= DG(delta_D_KsKPi,k_D_KsKPi,fdelta_D_KsKPi,fk_D_KsKPi,fdelta_D_KsKPi_err,fk_D_KsKPi_err,0.60);
@@ -93,10 +100,17 @@ double prob( const double * par, int mode = 0) {
   logprob[8]     =  -0.5 * ggsz_DKPi_x_obs_min_x_th * (ggsz_DKPi_x_covI * ggsz_DKPi_x_obs_min_x_th);
 #include <ggsz_DKstar0_th.c>
   logprob[9]     =  -0.5 * ggsz_DKstar0_x_obs_min_x_th * (ggsz_DKstar0_x_covI * ggsz_DKstar0_x_obs_min_x_th);
-  logprob[10]=logprob[0]+logprob[1]+logprob[2]+logprob[3]+logprob[4]+logprob[5]+logprob[6]+logprob[7]+logprob[8]+logprob[9];
+
+#include <GBDstarKp_th.c>
+logprob[10] = -0.5 *GBDstarKp_x_obs_min_x_th * (GBDstarKp_xcovI * GBDstarKp_x_obs_min_x_th);
+#include <GABDKstarp_th.c>
+logprob[11] = -0.5 *GABDKstarp_x_obs_min_x_th * (GABDKstarp_xcovI * GABDKstarp_x_obs_min_x_th);
+
+
+  logprob[12]=logprob[0]+logprob[1]+logprob[2]+logprob[3]+logprob[4]+logprob[5]+logprob[6]+logprob[7]+logprob[8]+logprob[9]+logprob[10]+logprob[11];
   //  printf("DEBUG: %g %g %g %g %g %g %g %g %g %g \n",logprob[0],logprob[1],logprob[2],logprob[3],logprob[4],
   //	 logprob[5],logprob[6],logprob[7],logprob[8],logprob[9]);
-  if(mode==0) return -(logprior+logprob[10]);
+  if(mode==0) return -(logprior+logprob[12]);
   else     return logprob[mode];
  
 }

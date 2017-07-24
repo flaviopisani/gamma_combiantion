@@ -182,6 +182,69 @@ extern TMatrixDSym corSystBsDsK;
 
 
 
+// GBDstarKp
+
+extern double a_fav_D_gamma;
+extern double a_fav_D_Pi0;
+extern double a_CP_D_gamma;
+extern double a_CP_D_Pi0;
+extern double r_CP_D_gamma;
+extern double r_CP_D_Pi0;
+
+extern double a_fav_D_gamma_stat;
+extern double a_fav_D_Pi0_stat;
+extern double a_CP_D_gamma_stat;
+extern double a_CP_D_Pi0_stat;
+extern double r_CP_D_gamma_stat;
+extern double r_CP_D_Pi0_stat;
+
+extern double a_fav_D_gamma_syst;
+extern double a_fav_D_Pi0_syst;
+extern double a_CP_D_gamma_syst;
+extern double a_CP_D_Pi0_syst;
+extern double r_CP_D_gamma_syst;
+extern double r_CP_D_Pi0_syst;
+
+extern TMatrixDSym corStatGBDstarKp; 
+extern TMatrixDSym corSystGBDstarKp;
+
+
+
+//GABDKstarp
+
+extern double a_fav_KPi;
+extern double a_CP_KK;
+extern double a_CP_PiPi;
+extern double r_CP_KK;
+extern double r_CP_PiPi;
+extern double r_plus_KPi;
+extern double r_minus_KPi;
+
+extern double a_fav_KPi_stat;
+extern double a_CP_KK_stat;
+extern double a_CP_PiPi_stat;
+extern double r_CP_KK_stat;
+extern double r_CP_PiPi_stat;
+extern double r_plus_KPi_stat;
+extern double r_minus_KPi_stat;
+
+extern double a_fav_KPi_syst;
+extern double a_CP_KK_syst;
+extern double a_CP_PiPi_syst;
+extern double r_CP_KK_syst;
+extern double r_CP_PiPi_syst;
+extern double r_plus_KPi_syst;
+extern double r_minus_KPi_syst;
+
+
+
+extern TMatrixDSym corStatGABDKstarp; 
+extern TMatrixDSym corSystGABDKstarp;
+
+
+
+
+
 
 
 

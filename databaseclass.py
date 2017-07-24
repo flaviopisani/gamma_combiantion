@@ -119,6 +119,12 @@ class Database:
 		json_file = askopenfile(mode='r',defaultextension='.json',filetypes=[("JSON Files", "*.json")],title='Import')
 		# ricostruisce il dizionario measures
 		self.measures = json.load(json_file)
+		# se sono stati aggiunti nuovi tipi di misure dalla volta precedente
+		for measure_name in self.measures_names:
+			if measure_name in self.measures:
+				None
+			else:
+				self.measures[measure_name] = {}
 		# aggiorna il numero di paper per ogni misura (elementi di number_of_papers_list)
 		for measure in self.measures_names:
 			self.number_of_papers_list[self.measures_names.index(measure)] = len(self.measures[measure])

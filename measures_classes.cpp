@@ -328,3 +328,103 @@ void Gabdkstar :: assign_from_json (char* json_file) {
 
 }
 
+
+
+void Gbdstarkp :: assign_from_json (char* json_file) {
+
+	std::ifstream ifs(json_file);
+	if (ifs) {
+	Json::Reader reader;
+	Json::Value obj;
+	reader.parse(ifs,obj);
+
+	v1 = obj["GBD*K+"]["GBD*K+_paper_0"]["a_fav_D_gamma"]["value"].asDouble();
+	v2 = obj["GBD*K+"]["GBD*K+_paper_0"]["a_fav_D_Pi0"]["value"].asDouble();
+	v3 = obj["GBD*K+"]["GBD*K+_paper_0"]["a_CP_D_gamma"]["value"].asDouble();
+	v4 = obj["GBD*K+"]["GBD*K+_paper_0"]["a_CP_D_Pi0"]["value"].asDouble();
+	v5 = obj["GBD*K+"]["GBD*K+_paper_0"]["r_CP_D_gamma"]["value"].asDouble();
+	v6 = obj["GBD*K+"]["GBD*K+_paper_0"]["r_CP_D_Pi0"]["value"].asDouble();
+
+	v1_st = obj["GBD*K+"]["GBD*K+_paper_0"]["a_fav_D_gamma"]["stat"].asDouble();
+	v2_st = obj["GBD*K+"]["GBD*K+_paper_0"]["a_fav_D_Pi0"]["stat"].asDouble();
+	v3_st = obj["GBD*K+"]["GBD*K+_paper_0"]["a_CP_D_gamma"]["stat"].asDouble();
+	v4_st = obj["GBD*K+"]["GBD*K+_paper_0"]["a_CP_D_Pi0"]["stat"].asDouble();
+	v5_st = obj["GBD*K+"]["GBD*K+_paper_0"]["r_CP_D_gamma"]["stat"].asDouble();
+	v6_st = obj["GBD*K+"]["GBD*K+_paper_0"]["r_CP_D_Pi0"]["stat"].asDouble();
+
+	v1_sy = obj["GBD*K+"]["GBD*K+_paper_0"]["a_fav_D_gamma"]["sys"].asDouble();
+	v2_sy = obj["GBD*K+"]["GBD*K+_paper_0"]["a_fav_D_Pi0"]["sys"].asDouble();
+	v3_sy = obj["GBD*K+"]["GBD*K+_paper_0"]["a_CP_D_gamma"]["sys"].asDouble();
+	v4_sy = obj["GBD*K+"]["GBD*K+_paper_0"]["a_CP_D_Pi0"]["sys"].asDouble();
+	v5_sy = obj["GBD*K+"]["GBD*K+_paper_0"]["r_CP_D_gamma"]["sys"].asDouble();
+	v6_sy = obj["GBD*K+"]["GBD*K+_paper_0"]["r_CP_D_Pi0"]["sys"].asDouble();
+
+
+	
+	for (int element=0; element<36;element++) {
+			corrStat[element] = obj["GBD*K+"]["GBD*K+_paper_0"]["corr_Stat_paper_0"][element].asDouble();
+		}
+
+	for (int element=0; element<36;element++) {
+			corrSyst[element] = obj["GBD*K+"]["GBD*K+_paper_0"]["corr_Sys_paper_0"][element].asDouble();
+		}
+	}
+
+	else {exit(EXIT_FAILURE);}
+
+}
+
+
+
+
+void Gabdkstarp :: assign_from_json (char* json_file) {
+
+	std::ifstream ifs(json_file);
+	if (ifs) {
+	Json::Reader reader;
+	Json::Value obj;
+	reader.parse(ifs,obj);
+
+	v1 = obj["GABDK*+"]["GABDK*+_paper_0"]["a_fav_KPi"]["value"].asDouble();
+	v2 = obj["GABDK*+"]["GABDK*+_paper_0"]["a_CP_KK"]["value"].asDouble();
+	v3 = obj["GABDK*+"]["GABDK*+_paper_0"]["a_CP_PiPi"]["value"].asDouble();
+	v4 = obj["GABDK*+"]["GABDK*+_paper_0"]["r_CP_KK"]["value"].asDouble();
+	v5 = obj["GABDK*+"]["GABDK*+_paper_0"]["r_CP_PiPi"]["value"].asDouble();
+	v6 = obj["GABDK*+"]["GABDK*+_paper_0"]["r_plus_KPi"]["value"].asDouble();
+	v7 = obj["GABDK*+"]["GABDK*+_paper_0"]["r_minus_KPi"]["value"].asDouble();
+
+	v1_st = obj["GABDK*+"]["GABDK*+_paper_0"]["a_fav_KPi"]["stat"].asDouble();
+	v2_st = obj["GABDK*+"]["GABDK*+_paper_0"]["a_CP_KK"]["stat"].asDouble();
+	v3_st = obj["GABDK*+"]["GABDK*+_paper_0"]["a_CP_PiPi"]["stat"].asDouble();
+	v4_st = obj["GABDK*+"]["GABDK*+_paper_0"]["r_CP_KK"]["stat"].asDouble();
+	v5_st = obj["GABDK*+"]["GABDK*+_paper_0"]["r_CP_PiPi"]["stat"].asDouble();
+	v6_st = obj["GABDK*+"]["GABDK*+_paper_0"]["r_plus_KPi"]["stat"].asDouble();
+	v7_st = obj["GABDK*+"]["GABDK*+_paper_0"]["r_minus_KPi"]["stat"].asDouble();
+
+	v1_sy = obj["GABDK*+"]["GABDK*+_paper_0"]["a_fav_KPi"]["sys"].asDouble();
+	v2_sy = obj["GABDK*+"]["GABDK*+_paper_0"]["a_CP_KK"]["sys"].asDouble();
+	v3_sy = obj["GABDK*+"]["GABDK*+_paper_0"]["a_CP_PiPi"]["sys"].asDouble();
+	v4_sy = obj["GABDK*+"]["GABDK*+_paper_0"]["r_CP_KK"]["sys"].asDouble();
+	v5_sy = obj["GABDK*+"]["GABDK*+_paper_0"]["r_CP_PiPi"]["sys"].asDouble();
+	v6_sy = obj["GABDK*+"]["GABDK*+_paper_0"]["r_plus_KPi"]["sys"].asDouble();
+	v7_sy = obj["GABDK*+"]["GABDK*+_paper_0"]["r_minus_KPi"]["sys"].asDouble();
+
+
+	
+	for (int element=0; element<49;element++) {
+			corrStat[element] = obj["GABDK*+"]["GABDK*+_paper_0"]["corr_Stat_paper_0"][element].asDouble();
+		}
+
+	for (int element=0; element<49;element++) {
+			corrSyst[element] = obj["GABDK*+"]["GABDK*+_paper_0"]["corr_Sys_paper_0"][element].asDouble();
+		}
+	}
+
+	else {exit(EXIT_FAILURE);}
+
+}
+
+
+
+
+

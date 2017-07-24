@@ -36,8 +36,8 @@
 
 using namespace std;
 
-#define N1DPLOT  32
-#define NMODE 11
+#define N1DPLOT  37		//updated
+#define NMODE 13		//updated
 #define NBIN 1800
 #define NBINX 100
 #define NBINY 100
@@ -161,6 +161,11 @@ assign_from_classes (json_file);
 #include <ggsz_DKPi.c>
   // GGSZ DKStar
 #include <ggsz_DKstar0.c>
+
+
+#include <GBDstarKp.c>
+#include <GABDKstarp.c>
+
 
   /////////////////////////////////////////////////////////////////////////////
   /////////////////////////////// END INPUTS //////////////////////////////////

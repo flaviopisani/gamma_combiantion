@@ -357,6 +357,109 @@ void assign_from_classes (char* json_file) {
 		}
 	}
 */
+
+	//GBDstarKp
+	Gbdstarkp GBDstarKp_paper;
+	GBDstarKp_paper.assign_from_json(json_file);
+
+	a_fav_D_gamma = GBDstarKp_paper.get_v1();
+	a_fav_D_Pi0 = GBDstarKp_paper.get_v2();
+	a_CP_D_gamma = GBDstarKp_paper.get_v3();
+	a_CP_D_Pi0 = GBDstarKp_paper.get_v4();
+	r_CP_D_gamma = GBDstarKp_paper.get_v5();
+	r_CP_D_Pi0 = GBDstarKp_paper.get_v6();
+
+	a_fav_D_gamma_stat = GBDstarKp_paper.get_v1_st();
+	a_fav_D_Pi0_stat = GBDstarKp_paper.get_v2_st();
+	a_CP_D_gamma_stat = GBDstarKp_paper.get_v3_st();
+	a_CP_D_Pi0_stat = GBDstarKp_paper.get_v4_st();
+	r_CP_D_gamma_stat = GBDstarKp_paper.get_v5_st();
+	r_CP_D_Pi0_stat = GBDstarKp_paper.get_v6_st();
+
+	a_fav_D_gamma_syst = GBDstarKp_paper.get_v1_sy();
+	a_fav_D_Pi0_syst = GBDstarKp_paper.get_v2_sy();
+	a_CP_D_gamma_syst = GBDstarKp_paper.get_v3_sy();
+	a_CP_D_Pi0_syst = GBDstarKp_paper.get_v4_sy();
+	r_CP_D_gamma_syst = GBDstarKp_paper.get_v5_sy();
+	r_CP_D_Pi0_syst = GBDstarKp_paper.get_v6_sy();
+
+
+
+	//double* pointer_to_matrix_stat;
+	//double* pointer_to_matrix_syst;
+	pointer_to_matrix_stat = GBDstarKp_paper.get_corrStat();
+	pointer_to_matrix_syst = GBDstarKp_paper.get_corrSyst();
+
+	for (int i=0; i<6; i++){
+		for (int j=0; j<6; j++) {
+			corStatGBDstarKp(i,j) = *pointer_to_matrix_stat;
+			pointer_to_matrix_stat ++;
+			
+		}
+	}
+
+	for (int i=0; i<6; i++){
+		for (int j=0; j<6; j++) {
+			corSystGBDstarKp(i,j) = *pointer_to_matrix_syst;
+			pointer_to_matrix_syst ++;
+			
+		}
+	}
+
+
+	//GABDKstarp
+	Gabdkstarp GABDKstarp_paper;
+	GABDKstarp_paper.assign_from_json(json_file);
+
+	a_fav_KPi = GABDKstarp_paper.get_v1();
+	a_CP_KK = GABDKstarp_paper.get_v2();
+	a_CP_PiPi = GABDKstarp_paper.get_v3();
+	r_CP_KK = GABDKstarp_paper.get_v4();
+	r_CP_PiPi = GABDKstarp_paper.get_v5();
+	r_plus_KPi = GABDKstarp_paper.get_v6();
+	r_minus_KPi = GABDKstarp_paper.get_v7();
+
+	a_fav_KPi_stat = GABDKstarp_paper.get_v1_st();
+	a_CP_KK_stat = GABDKstarp_paper.get_v2_st();
+	a_CP_PiPi_stat = GABDKstarp_paper.get_v3_st();
+	r_CP_KK_stat = GABDKstarp_paper.get_v4_st();
+	r_CP_PiPi_stat = GABDKstarp_paper.get_v5_st();
+	r_plus_KPi_stat = GABDKstarp_paper.get_v6_st();
+	r_minus_KPi_stat = GABDKstarp_paper.get_v7_st();
+
+	a_fav_KPi_syst = GABDKstarp_paper.get_v1_sy();
+	a_CP_KK_syst = GABDKstarp_paper.get_v2_sy();
+	a_CP_PiPi_syst = GABDKstarp_paper.get_v3_sy();
+	r_CP_KK_syst = GABDKstarp_paper.get_v4_sy();
+	r_CP_PiPi_syst = GABDKstarp_paper.get_v5_sy();
+	r_plus_KPi_syst = GABDKstarp_paper.get_v6_sy();
+	r_minus_KPi_syst = GABDKstarp_paper.get_v7_sy();
+
+
+
+	//double* pointer_to_matrix_stat;
+	//double* pointer_to_matrix_syst;
+	pointer_to_matrix_stat = GABDKstarp_paper.get_corrStat();
+	pointer_to_matrix_syst = GABDKstarp_paper.get_corrSyst();
+
+	for (int i=0; i<7; i++){
+		for (int j=0; j<7; j++) {
+			corStatGABDKstarp(i,j) = *pointer_to_matrix_stat;
+			pointer_to_matrix_stat ++;
+			
+		}
+	}
+
+	for (int i=0; i<7; i++){
+		for (int j=0; j<7; j++) {
+			corSystGABDKstarp(i,j) = *pointer_to_matrix_syst;
+			pointer_to_matrix_syst ++;
+			
+		}
+	}
+
+
+
 }
 
 
