@@ -4,8 +4,17 @@ double param[N1DPLOT] = { -0.00156132, 0.00096233, 0.736551, 0.972317, 0.746927,
 			  0.801764, 0.975202, 0.962516, 0.957607, 0.517778,
 			  -0.00778575, 0.0550268, 0.0590432, 0.0441666, 0.606793,
 			  0.0977873, 0.077757, 0.241639, 0.00390364, 0.00637248,
-			  1.86628,1.02227};
+			  1.86628,1.02227,
+			334.9,0.210,73,0.052,0.95};
 
+/*
+var_to_str[32] = "delta_B_DstarK";
+var_to_str[33] = "r_B_DstarK";
+
+var_to_str[34] = "delta_B_DKstar";
+var_to_str[35] = "r_B_DKstar";
+var_to_str[36] = "k_B_DKstar";
+*/
 
 
 TString mode_to_str[NMODE];
@@ -124,6 +133,18 @@ x_min[ 29 ] =-0.0006;    x_max[ 29 ] =0.014;
 x_min[ 30 ] =   -50;     x_max[ 30 ] =   53;
 x_min[ 31 ] =   0.0;     x_max[ 31 ] =  2.0;
 
+
+x_min[32]=0;
+x_max[32]=360;
+x_min[33]=0;
+x_max[33]=0.5;
+x_min[34]=0;
+x_max[34]=360;
+x_min[35]=-0.05;
+x_max[35]=0.15;
+x_min[36]=0.8;
+x_max[36]=1.1;
+
 //x_min[ 30 ] =  0.001;    x_max[ 30 ] = 0.005;
 //x_min[ 31 ] =  0.0;      x_max[ 31 ] = 1.0;
 //x_min[ 32 ] =  0.001;    x_max[ 32 ] = 0.0035;
@@ -139,6 +160,46 @@ delta_B_DKPiPi_range[0]    = x_min[10]; delta_B_DKPiPi_range[1]  = x_max[10];   
 r_B_DKstar0_range[0]       = x_min[27]; r_B_DKstar0_range[1]     = x_max[27];    //18 k_B_DKstar0
 delta_B_DKstar0_range[0]   = x_min[11]; delta_B_DKstar0_range[1] = x_max[11];   //11 delta_B_DKstar0
 k_B_DKPiPi_range[0]        = x_min[17]; k_B_DKPiPi_range[1]      = x_max[17];   //17 k_B_DKPiPi
+
+
+
+
+double delta_B_DstarK_range[2];
+double r_B_DstarK_range[2];
+double delta_B_DKstar_range[2];
+double r_B_DKstar_range[2];
+double k_B_DKstar_range[2];
+
+
+delta_B_DstarK_range[0] = x_min[32];
+delta_B_DstarK_range[1] = x_max[32];
+r_B_DstarK_range[0] = x_min[33];
+r_B_DstarK_range[1] = x_max[33];
+delta_B_DKstar_range[0] = x_min[34];
+delta_B_DKstar_range[1] = x_max[34];
+r_B_DKstar_range[0] = x_min[35];
+r_B_DKstar_range[1] = x_max[35];
+k_B_DKstar_range[0] = x_min[36];
+k_B_DKstar_range[1] = x_max[36];
+
+
+
+
+
+
+
+
+
+
+
+/*
+var_to_str[32] = "delta_B_DstarK";
+var_to_str[33] = "r_B_DstarK";
+
+var_to_str[34] = "delta_B_DKstar";
+var_to_str[35] = "r_B_DKstar";
+var_to_str[36] = "k_B_DKstar";
+*/
 
 /*
 // unknown

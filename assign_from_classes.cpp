@@ -411,29 +411,29 @@ void assign_from_classes (char* json_file) {
 	Gabdkstarp GABDKstarp_paper;
 	GABDKstarp_paper.assign_from_json(json_file);
 
-	a_fav_KPi = GABDKstarp_paper.get_v1();
-	a_CP_KK = GABDKstarp_paper.get_v2();
-	a_CP_PiPi = GABDKstarp_paper.get_v3();
-	r_CP_KK = GABDKstarp_paper.get_v4();
-	r_CP_PiPi = GABDKstarp_paper.get_v5();
-	r_plus_KPi = GABDKstarp_paper.get_v6();
-	r_minus_KPi = GABDKstarp_paper.get_v7();
+	a_fav_DKstarp_KPi = GABDKstarp_paper.get_v1();
+	a_CP_DKstarp_KK = GABDKstarp_paper.get_v2();
+	a_CP_DKstarp_PiPi = GABDKstarp_paper.get_v3();
+	r_CP_DKstarp_KK = GABDKstarp_paper.get_v4();
+	r_CP_DKstarp_PiPi = GABDKstarp_paper.get_v5();
+	r_plus_DKstarp_KPi = GABDKstarp_paper.get_v6();
+	r_minus_DKstarp_KPi = GABDKstarp_paper.get_v7();
 
-	a_fav_KPi_stat = GABDKstarp_paper.get_v1_st();
-	a_CP_KK_stat = GABDKstarp_paper.get_v2_st();
-	a_CP_PiPi_stat = GABDKstarp_paper.get_v3_st();
-	r_CP_KK_stat = GABDKstarp_paper.get_v4_st();
-	r_CP_PiPi_stat = GABDKstarp_paper.get_v5_st();
-	r_plus_KPi_stat = GABDKstarp_paper.get_v6_st();
-	r_minus_KPi_stat = GABDKstarp_paper.get_v7_st();
+	a_fav_DKstarp_KPi_stat = GABDKstarp_paper.get_v1_st();
+	a_CP_DKstarp_KK_stat = GABDKstarp_paper.get_v2_st();
+	a_CP_DKstarp_PiPi_stat = GABDKstarp_paper.get_v3_st();
+	r_CP_DKstarp_KK_stat = GABDKstarp_paper.get_v4_st();
+	r_CP_DKstarp_PiPi_stat = GABDKstarp_paper.get_v5_st();
+	r_plus_DKstarp_KPi_stat = GABDKstarp_paper.get_v6_st();
+	r_minus_DKstarp_KPi_stat = GABDKstarp_paper.get_v7_st();
 
-	a_fav_KPi_syst = GABDKstarp_paper.get_v1_sy();
-	a_CP_KK_syst = GABDKstarp_paper.get_v2_sy();
-	a_CP_PiPi_syst = GABDKstarp_paper.get_v3_sy();
-	r_CP_KK_syst = GABDKstarp_paper.get_v4_sy();
-	r_CP_PiPi_syst = GABDKstarp_paper.get_v5_sy();
-	r_plus_KPi_syst = GABDKstarp_paper.get_v6_sy();
-	r_minus_KPi_syst = GABDKstarp_paper.get_v7_sy();
+	a_fav_DKstarp_KPi_syst = GABDKstarp_paper.get_v1_sy();
+	a_CP_DKstarp_KK_syst = GABDKstarp_paper.get_v2_sy();
+	a_CP_DKstarp_PiPi_syst = GABDKstarp_paper.get_v3_sy();
+	r_CP_DKstarp_KK_syst = GABDKstarp_paper.get_v4_sy();
+	r_CP_DKstarp_PiPi_syst = GABDKstarp_paper.get_v5_sy();
+	r_plus_DKstarp_KPi_syst = GABDKstarp_paper.get_v6_sy();
+	r_minus_DKstarp_KPi_syst = GABDKstarp_paper.get_v7_sy();
 
 
 

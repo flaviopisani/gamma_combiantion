@@ -162,7 +162,7 @@ assign_from_classes (json_file);
   // GGSZ DKStar
 #include <ggsz_DKstar0.c>
 
-
+// new ones
 #include <GBDstarKp.c>
 #include <GABDKstarp.c>
 
@@ -181,7 +181,7 @@ assign_from_classes (json_file);
   //////////////////////////////////////// ////////////////////////////////////
   // Search for the minimum
   // set starting point
-  TFitter* minimizer = new TFitter(32);
+  TFitter* minimizer = new TFitter(37);			// updated, 32 previously
   double p1 = 3;
   minimizer->ExecuteCommand("SET PRINTOUT",&p1,1);
   minimizer->SetFCN(minuitFunction);
@@ -200,7 +200,7 @@ assign_from_classes (json_file);
   minimizer->ExecuteCommand("HESSE",arglist,1);
 
   // get best fit value
-  for (int i=0; i<32; i++) param[i] = minimizer->GetParameter(i);
+  for (int i=0; i<37; i++) param[i] = minimizer->GetParameter(i);		//updated, previously 32
   //printf(" %i %f\n",i,param[i]);
   double tmp = prob(param,0);
   printf("FCN value at minimum: %f %f\n",tmp,param[13]);
@@ -345,6 +345,26 @@ assign_from_classes (json_file);
     param[30]= myRandom->Gaus(fDelta_B_DKstar0,fDelta_B_DKstar0_err);
     //R_B_DKstar0 - Gaussian
     param[31]= myRandom->Gaus(fR_B_DKstar0,fR_B_DKstar0_err);
+
+param[32] = myRandom->Uniform(1) * (delta_B_DstarK_range[1]-delta_B_DstarK_range[0])+ delta_B_DstarK_range[0];
+param[33] = myRandom->Uniform(1) * (r_B_DstarK_range[1]-r_B_DstarK_range[0])+ r_B_DstarK_range[0];
+param[34] = myRandom->Uniform(1) * (delta_B_DKstar_range[1]-delta_B_DKstar_range[0])+ delta_B_DKstar_range[0];
+param[35] = myRandom->Uniform(1) * (r_B_DKstar_range[1]-r_B_DKstar_range[0])+ r_B_DKstar_range[0];
+param[36] = myRandom->Gaus(0.95,0.06);
+
+
+
+/*
+var_to_str[32] = "delta_B_DstarK";
+var_to_str[33] = "r_B_DstarK";
+
+var_to_str[34] = "delta_B_DKstar";
+var_to_str[35] = "r_B_DKstar";
+var_to_str[36] = "k_B_DKstar";
+*/
+
+
+
 
     //    for (int i=0; i<32; i++) printf("PARARM %d %f\n",i,param[i]);
 

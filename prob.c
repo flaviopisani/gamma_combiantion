@@ -102,9 +102,9 @@ logprior += -0.5 * (k_B_DKstar - 0.954700)*(k_B_DKstar - 0.954700)/0.058781/0.58
   logprob[9]     =  -0.5 * ggsz_DKstar0_x_obs_min_x_th * (ggsz_DKstar0_x_covI * ggsz_DKstar0_x_obs_min_x_th);
 
 #include <GBDstarKp_th.c>
-logprob[10] = -0.5 *GBDstarKp_x_obs_min_x_th * (GBDstarKp_xcovI * GBDstarKp_x_obs_min_x_th);
+logprob[10] = -0.5 * GBDstarKp_x_obs_min_x_th * (GBDstarKp_xcovI * GBDstarKp_x_obs_min_x_th);
 #include <GABDKstarp_th.c>
-logprob[11] = -0.5 *GABDKstarp_x_obs_min_x_th * (GABDKstarp_xcovI * GABDKstarp_x_obs_min_x_th);
+logprob[11] = -0.5 * GABDKstarp_x_obs_min_x_th * (GABDKstarp_xcovI * GABDKstarp_x_obs_min_x_th);
 
 
   logprob[12]=logprob[0]+logprob[1]+logprob[2]+logprob[3]+logprob[4]+logprob[5]+logprob[6]+logprob[7]+logprob[8]+logprob[9]+logprob[10]+logprob[11];

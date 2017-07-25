@@ -1,21 +1,21 @@
 //TVectorD GABDKstarp_x_stat_err(7);
-GABDKstarp_x_stat_err(0) = a_fav_KPi_stat;
-GABDKstarp_x_stat_err(1) = a_CP_KK_stat;
-GABDKstarp_x_stat_err(2) = a_CP_PiPi_stat;
-GABDKstarp_x_stat_err(3) = r_CP_KK_stat;
-GABDKstarp_x_stat_err(4) = r_CP_PiPi_stat;
-GABDKstarp_x_stat_err(5) = r_plus_KPi_stat;
-GABDKstarp_x_stat_err(6) = r_minus_KPi_stat;
+GABDKstarp_x_stat_err(0) = a_fav_DKstarp_KPi_stat;
+GABDKstarp_x_stat_err(1) = a_CP_DKstarp_KK_stat;
+GABDKstarp_x_stat_err(2) = a_CP_DKstarp_PiPi_stat;
+GABDKstarp_x_stat_err(3) = r_CP_DKstarp_KK_stat;
+GABDKstarp_x_stat_err(4) = r_CP_DKstarp_PiPi_stat;
+GABDKstarp_x_stat_err(5) = r_plus_DKstarp_KPi_stat;
+GABDKstarp_x_stat_err(6) = r_minus_DKstarp_KPi_stat;
 
 
 //TVectorD GABDKstarp_x_syst_err(7);
-GABDKstarp_x_syst_err(0) = a_fav_KPi_syst;
-GABDKstarp_x_syst_err(1) = a_CP_KK_syst;
-GABDKstarp_x_syst_err(2) = a_CP_PiPi_syst;
-GABDKstarp_x_syst_err(3) = r_CP_KK_syst;
-GABDKstarp_x_syst_err(4) = r_CP_PiPi_syst;
-GABDKstarp_x_syst_err(5) = r_plus_KPi_syst;
-GABDKstarp_x_syst_err(6) = r_minus_KPi_syst;
+GABDKstarp_x_syst_err(0) = a_fav_DKstarp_KPi_syst;
+GABDKstarp_x_syst_err(1) = a_CP_DKstarp_KK_syst;
+GABDKstarp_x_syst_err(2) = a_CP_DKstarp_PiPi_syst;
+GABDKstarp_x_syst_err(3) = r_CP_DKstarp_KK_syst;
+GABDKstarp_x_syst_err(4) = r_CP_DKstarp_PiPi_syst;
+GABDKstarp_x_syst_err(5) = r_plus_DKstarp_KPi_syst;
+GABDKstarp_x_syst_err(6) = r_minus_DKstarp_KPi_syst;
 
 
 

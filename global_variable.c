@@ -328,29 +328,29 @@ TMatrixDSym covStatGBDstarKp(6),covSystGBDstarKp(6),covGBDstarKp(6),corGBDstarKp
 
 //GABDKstarp
 
-double a_fav_KPi;
-double a_CP_KK;
-double a_CP_PiPi;
-double r_CP_KK;
-double r_CP_PiPi;
-double r_plus_KPi;
-double r_minus_KPi;
+double a_fav_DKstarp_KPi;
+double a_CP_DKstarp_KK;
+double a_CP_DKstarp_PiPi;
+double r_CP_DKstarp_KK;
+double r_CP_DKstarp_PiPi;
+double r_plus_DKstarp_KPi;
+double r_minus_DKstarp_KPi;
 
-double a_fav_KPi_stat;
-double a_CP_KK_stat;
-double a_CP_PiPi_stat;
-double r_CP_KK_stat;
-double r_CP_PiPi_stat;
-double r_plus_KPi_stat;
-double r_minus_KPi_stat;
+double a_fav_DKstarp_KPi_stat;
+double a_CP_DKstarp_KK_stat;
+double a_CP_DKstarp_PiPi_stat;
+double r_CP_DKstarp_KK_stat;
+double r_CP_DKstarp_PiPi_stat;
+double r_plus_DKstarp_KPi_stat;
+double r_minus_DKstarp_KPi_stat;
 
-double a_fav_KPi_syst;
-double a_CP_KK_syst;
-double a_CP_PiPi_syst;
-double r_CP_KK_syst;
-double r_CP_PiPi_syst;
-double r_plus_KPi_syst;
-double r_minus_KPi_syst;
+double a_fav_DKstarp_KPi_syst;
+double a_CP_DKstarp_KK_syst;
+double a_CP_DKstarp_PiPi_syst;
+double r_CP_DKstarp_KK_syst;
+double r_CP_DKstarp_PiPi_syst;
+double r_plus_DKstarp_KPi_syst;
+double r_minus_DKstarp_KPi_syst;
 
 
 

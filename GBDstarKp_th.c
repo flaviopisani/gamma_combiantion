@@ -19,11 +19,11 @@ double a_fav_D_Pi0_th   = (2. * r_B_DstarK * r_D_KPi * sin((delta_B_DstarK - del
 
 
 double a_CP_D_gamma_th    = (-2. * r_B_DstarK * sin(delta_B_DstarK/180.*M_PI) * sin(gamma/180.*M_PI))/
-  (1. + r_B_DstarK * r_B_DstarK  - 2. * r_B_DstarK * cos(delta_B_DstarK/180.*M_PI) * cos(gamma/180.*M_PI)) + a_CP_dir_KK;
+  (1. + r_B_DstarK * r_B_DstarK  - 2. * r_B_DstarK * cos(delta_B_DstarK/180.*M_PI) * cos(gamma/180.*M_PI)) + (0.0010/(0.0015*0.0015)-0.0015/(0.0014*0.0014))/(1/(0.0015*0.0015)+1/(0.0014*0.0014));
 
 
 double a_CP_D_Pi0_th    = (2. * r_B_DstarK * sin(delta_B_DstarK/180.*M_PI) * sin(gamma/180.*M_PI))/
-  (1. + r_B_DstarK * r_B_DstarK  + 2. * r_B_DstarK * cos(delta_B_DstarK/180.*M_PI) * cos(gamma/180.*M_PI)) + a_CP_dir_KK;
+  (1. + r_B_DstarK * r_B_DstarK  + 2. * r_B_DstarK * cos(delta_B_DstarK/180.*M_PI) * cos(gamma/180.*M_PI)) + (0.0010/(0.0015*0.0015)-0.0015/(0.0014*0.0014))/(1/(0.0015*0.0015)+1/(0.0014*0.0014));
 
 
 double r_CP_D_gamma_th        = 1. + r_B_DstarK * r_B_DstarK - 2. * r_B_DstarK * cos(delta_B_DstarK/180.*M_PI) * cos(gamma/180.*M_PI);

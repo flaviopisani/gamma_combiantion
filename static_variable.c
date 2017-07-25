@@ -14,6 +14,14 @@ double delta_B_DKstar0_range[2]   = {x_min[11]   ,x_max[11]};   //11 delta_B_DKs
 double k_B_DKPiPi_range[2]        = {x_min[17]   ,x_max[17]};   //17 k_B_DKPiPi
 
 
+/*
+double delta_B_DstarK_range[2] = {x_min[32],x_max[32]};
+double r_B_DstarK_range[2] = {x_min[33],x_max[33]};
+double delta_B_DKstar_range[2] = {x_min[34],x_max[34]};
+double r_B_DKstar_range[2] = {x_min[35],x_max[35]};
+double k_B_DKstar_range[2] = {x_min[36],x_max[36]};
+*/
+
 // unknown
 double Gamma = 0, delta_B_DK = 0, delta_Bs_DsK = 0, delta_B_DKPiPi = 0, delta_B_DKstar0 = 0,
   r_B_DK =0,      r_B_DsK = 0,      r_B_DKPiPi = 0,     r_B_DKstar0 = 0,  R_B_DKstar0 = 0,  Delta_B_DKstar0 = 0;

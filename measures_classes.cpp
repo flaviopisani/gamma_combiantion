@@ -385,29 +385,29 @@ void Gabdkstarp :: assign_from_json (char* json_file) {
 	Json::Value obj;
 	reader.parse(ifs,obj);
 
-	v1 = obj["GABDK*+"]["GABDK*+_paper_0"]["a_fav_KPi"]["value"].asDouble();
-	v2 = obj["GABDK*+"]["GABDK*+_paper_0"]["a_CP_KK"]["value"].asDouble();
-	v3 = obj["GABDK*+"]["GABDK*+_paper_0"]["a_CP_PiPi"]["value"].asDouble();
-	v4 = obj["GABDK*+"]["GABDK*+_paper_0"]["r_CP_KK"]["value"].asDouble();
-	v5 = obj["GABDK*+"]["GABDK*+_paper_0"]["r_CP_PiPi"]["value"].asDouble();
-	v6 = obj["GABDK*+"]["GABDK*+_paper_0"]["r_plus_KPi"]["value"].asDouble();
-	v7 = obj["GABDK*+"]["GABDK*+_paper_0"]["r_minus_KPi"]["value"].asDouble();
+	v1 = obj["GABDK*+"]["GABDK*+_paper_0"]["a_fav_DKstarp_KPi"]["value"].asDouble();
+	v2 = obj["GABDK*+"]["GABDK*+_paper_0"]["a_CP_DKstarp_KK"]["value"].asDouble();
+	v3 = obj["GABDK*+"]["GABDK*+_paper_0"]["a_CP_DKstarp_PiPi"]["value"].asDouble();
+	v4 = obj["GABDK*+"]["GABDK*+_paper_0"]["r_CP_DKstarp_KK"]["value"].asDouble();
+	v5 = obj["GABDK*+"]["GABDK*+_paper_0"]["r_CP_DKstarp_PiPi"]["value"].asDouble();
+	v6 = obj["GABDK*+"]["GABDK*+_paper_0"]["r_plus_DKstarp_KPi"]["value"].asDouble();
+	v7 = obj["GABDK*+"]["GABDK*+_paper_0"]["r_minus_DKstarp_KPi"]["value"].asDouble();
 
-	v1_st = obj["GABDK*+"]["GABDK*+_paper_0"]["a_fav_KPi"]["stat"].asDouble();
-	v2_st = obj["GABDK*+"]["GABDK*+_paper_0"]["a_CP_KK"]["stat"].asDouble();
-	v3_st = obj["GABDK*+"]["GABDK*+_paper_0"]["a_CP_PiPi"]["stat"].asDouble();
-	v4_st = obj["GABDK*+"]["GABDK*+_paper_0"]["r_CP_KK"]["stat"].asDouble();
-	v5_st = obj["GABDK*+"]["GABDK*+_paper_0"]["r_CP_PiPi"]["stat"].asDouble();
-	v6_st = obj["GABDK*+"]["GABDK*+_paper_0"]["r_plus_KPi"]["stat"].asDouble();
-	v7_st = obj["GABDK*+"]["GABDK*+_paper_0"]["r_minus_KPi"]["stat"].asDouble();
+	v1_st = obj["GABDK*+"]["GABDK*+_paper_0"]["a_fav_DKstarp_KPi"]["stat"].asDouble();
+	v2_st = obj["GABDK*+"]["GABDK*+_paper_0"]["a_CP_DKstarp_KK"]["stat"].asDouble();
+	v3_st = obj["GABDK*+"]["GABDK*+_paper_0"]["a_CP_DKstarp_PiPi"]["stat"].asDouble();
+	v4_st = obj["GABDK*+"]["GABDK*+_paper_0"]["r_CP_DKstarp_KK"]["stat"].asDouble();
+	v5_st = obj["GABDK*+"]["GABDK*+_paper_0"]["r_CP_DKstarp_PiPi"]["stat"].asDouble();
+	v6_st = obj["GABDK*+"]["GABDK*+_paper_0"]["r_plus_DKstarp_KPi"]["stat"].asDouble();
+	v7_st = obj["GABDK*+"]["GABDK*+_paper_0"]["r_minus_DKstarp_KPi"]["stat"].asDouble();
 
-	v1_sy = obj["GABDK*+"]["GABDK*+_paper_0"]["a_fav_KPi"]["sys"].asDouble();
-	v2_sy = obj["GABDK*+"]["GABDK*+_paper_0"]["a_CP_KK"]["sys"].asDouble();
-	v3_sy = obj["GABDK*+"]["GABDK*+_paper_0"]["a_CP_PiPi"]["sys"].asDouble();
-	v4_sy = obj["GABDK*+"]["GABDK*+_paper_0"]["r_CP_KK"]["sys"].asDouble();
-	v5_sy = obj["GABDK*+"]["GABDK*+_paper_0"]["r_CP_PiPi"]["sys"].asDouble();
-	v6_sy = obj["GABDK*+"]["GABDK*+_paper_0"]["r_plus_KPi"]["sys"].asDouble();
-	v7_sy = obj["GABDK*+"]["GABDK*+_paper_0"]["r_minus_KPi"]["sys"].asDouble();
+	v1_sy = obj["GABDK*+"]["GABDK*+_paper_0"]["a_fav_DKstarp_KPi"]["sys"].asDouble();
+	v2_sy = obj["GABDK*+"]["GABDK*+_paper_0"]["a_CP_DKstarp_KK"]["sys"].asDouble();
+	v3_sy = obj["GABDK*+"]["GABDK*+_paper_0"]["a_CP_DKstarp_PiPi"]["sys"].asDouble();
+	v4_sy = obj["GABDK*+"]["GABDK*+_paper_0"]["r_CP_DKstarp_KK"]["sys"].asDouble();
+	v5_sy = obj["GABDK*+"]["GABDK*+_paper_0"]["r_CP_DKstarp_PiPi"]["sys"].asDouble();
+	v6_sy = obj["GABDK*+"]["GABDK*+_paper_0"]["r_plus_DKstarp_KPi"]["sys"].asDouble();
+	v7_sy = obj["GABDK*+"]["GABDK*+_paper_0"]["r_minus_DKstarp_KPi"]["sys"].asDouble();
 
 
 	
