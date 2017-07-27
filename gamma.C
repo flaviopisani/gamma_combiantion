@@ -395,6 +395,26 @@ var_to_str[36] = "k_B_DKstar";
       H2D[11][27]->Fill(param[11],param[27],exp(logprob));
       H2D[13][27]->Fill(param[13],param[27],exp(logprob));
     }
+
+
+
+    else if (mode==mode_to_str[10]) {
+      H2D[13][32]->Fill(param[13],param[32],exp(logprob));
+      H2D[32][33]->Fill(param[32],param[33],exp(logprob));
+      H2D[13][33]->Fill(param[13],param[33],exp(logprob));
+    }
+
+
+
+
+    else if (mode==mode_to_str[11]) {
+      H2D[13][34]->Fill(param[13],param[34],exp(logprob));
+      H2D[34][35]->Fill(param[34],param[35],exp(logprob));
+      H2D[13][35]->Fill(param[13],param[35],exp(logprob));
+    }
+
+
+
     else {
       H2D[13][25]->Fill(param[13],param[25],exp(logprob));
       H2D[9][13]->Fill(param[9],param[13],exp(logprob));
@@ -411,6 +431,14 @@ var_to_str[36] = "k_B_DKstar";
     }
     */
   }
+
+
+
+
+//cout << "diobestia" << endl;
+
+
+
     // delete gsl vector
     gsl_vector_free(hfag_mean);
     gsl_vector_free(hfag_resul);
@@ -456,6 +484,27 @@ var_to_str[36] = "k_B_DKstar";
       H2D[11][27]->Write();
       H2D[13][27]->Write();
     }
+
+
+
+
+    else if (mode==mode_to_str[10]) {
+      H2D[13][32]->Write();
+      H2D[32][33]->Write();
+      H2D[13][33]->Write();
+    }
+
+
+
+    else if (mode==mode_to_str[11]) {
+      H2D[13][34]->Write();
+      H2D[34][35]->Write();
+      H2D[13][35]->Write();
+    }
+
+
+
+
     else {
       H2D[13][25]->Write();
       H2D[9][13]->Write();
