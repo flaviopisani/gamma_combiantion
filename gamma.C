@@ -202,7 +202,7 @@ assign_from_classes (json_file);
   // get best fit value
   for (int i=0; i<37; i++) param[i] = minimizer->GetParameter(i);		//updated, previously 32
   //printf(" %i %f\n",i,param[i]);
-  double tmp = prob(param,0);
+  double tmp = prob(param,13);
   printf("FCN value at minimum: %f %f\n",tmp,param[13]);
   //  return 0;
 

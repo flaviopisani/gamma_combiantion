@@ -1,4 +1,4 @@
-double prob( const double * par, int mode = 0) {
+double prob( const double * par, int mode = 13) {
 
   // 37 Parameters
   double  a_CP_dir_KK     = par[0];   double  a_CP_dir_PiPi   = par[1];   double  F_plus_KKPi0    = par[2];   double  F_plus_PiPiPi0  = par[3];
@@ -110,12 +110,12 @@ logprob[11] = -0.5 * GABDKstarp_x_obs_min_x_th * (GABDKstarp_xcovI * GABDKstarp_
   logprob[12]=logprob[0]+logprob[1]+logprob[2]+logprob[3]+logprob[4]+logprob[5]+logprob[6]+logprob[7]+logprob[8]+logprob[9]+logprob[10]+logprob[11];
   //  printf("DEBUG: %g %g %g %g %g %g %g %g %g %g \n",logprob[0],logprob[1],logprob[2],logprob[3],logprob[4],
   //	 logprob[5],logprob[6],logprob[7],logprob[8],logprob[9]);
-  if(mode==0) return -(logprior+logprob[12]);
+  if(mode==13) return -(logprior+logprob[12]);
   else     return logprob[mode];
  
 }
 
 void minuitFunction(int& nDim, double* gout, double& result, double * par, int flg) {
   //printf("RESULT 2: %f\n",result);
-  result = prob(par,0);
+  result = prob(par,13);
 }
