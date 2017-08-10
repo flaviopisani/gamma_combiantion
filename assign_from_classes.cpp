@@ -458,6 +458,52 @@ void assign_from_classes (char* json_file) {
 		}
 	}
 
+	//GAKPiPiDhh
+	Gakpipidhh GAKPiPiDhh_paper;
+	GAKPiPiDhh_paper.assign_from_json(json_file);
+
+	r_CP_DKPiPi = GAKPiPiDhh_paper.get_v1();
+	a_fav_DKPiPi_KPi = GAKPiPiDhh_paper.get_v2();
+	a_CP_DKPiPi_KK = GAKPiPiDhh_paper.get_v3();
+	a_CP_DKPiPi_PiPi = GAKPiPiDhh_paper.get_v4();
+	r_plus_DKPiPi_KPi = GAKPiPiDhh_paper.get_v5();
+	r_minus_DKPiPi_KPi = GAKPiPiDhh_paper.get_v6();
+
+	r_CP_DKPiPi_stat_err = GAKPiPiDhh_paper.get_v1_st();
+	a_fav_DKPiPi_KPi_stat_err = GAKPiPiDhh_paper.get_v2_st();
+	a_CP_DKPiPi_KK_stat_err = GAKPiPiDhh_paper.get_v3_st();
+	a_CP_DKPiPi_PiPi_stat_err = GAKPiPiDhh_paper.get_v4_st();
+	r_plus_DKPiPi_KPi_stat_err = GAKPiPiDhh_paper.get_v5_st();
+	r_minus_DKPiPi_KPi_stat_err = GAKPiPiDhh_paper.get_v6_st();
+
+	r_CP_DKPiPi_syst_err = GAKPiPiDhh_paper.get_v1_sy();
+	a_fav_DKPiPi_KPi_syst_err = GAKPiPiDhh_paper.get_v2_sy();
+	a_CP_DKPiPi_KK_syst_err = GAKPiPiDhh_paper.get_v3_sy();
+	a_CP_DKPiPi_PiPi_syst_err = GAKPiPiDhh_paper.get_v4_sy();
+	r_plus_DKPiPi_KPi_syst_err = GAKPiPiDhh_paper.get_v5_sy();
+	r_minus_DKPiPi_KPi_syst_err = GAKPiPiDhh_paper.get_v6_sy();
+
+
+
+	//GLS
+	Gls GLS_paper;
+	GLS_paper.assign_from_json(json_file);
+
+	r_DK_fos_Ks_KPi = GLS_paper.get_v1();
+	a_fav_DK_KsKPi = GLS_paper.get_v2();
+	a_sup_DK_KsKPi = GLS_paper.get_v3();
+
+
+	r_DK_fos_Ks_KPi_stat_err = GLS_paper.get_v1_st();
+	a_fav_DK_KsKPi_stat_err = GLS_paper.get_v2_st();
+	a_sup_DK_KsKPi_stat_err = GLS_paper.get_v3_st();
+
+
+	r_DK_fos_Ks_KPi_syst_err = GLS_paper.get_v1_sy();
+	a_fav_DK_KsKPi_syst_err = GLS_paper.get_v2_sy();
+	a_sup_DK_KsKPi_syst_err = GLS_paper.get_v3_sy();
+
+
 
 
 }

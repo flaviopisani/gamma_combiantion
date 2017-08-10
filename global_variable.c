@@ -179,41 +179,44 @@ TMatrixDSym corStatADhhpi0(7),corSystADhhpi0(7),covStatADhhpi0(7),covSystADhhpi0
 
 // GSL
 
-double r_DK_fos_Ks_KPi  = 3.85500; // R_{DK,fav/sup}^{KsKPi}
-double a_fav_DK_KsKPi   = 0.02600; // A_{DK,fav}^{KsKPi}
-double a_sup_DK_KsKPi   = 0.33600; // A_{DK,sup}^{KsKPi}
+double r_DK_fos_Ks_KPi ;// = 3.855; // R_{DK,fav/sup}^{KsKPi}
+double a_fav_DK_KsKPi  ;// = 0.026; // A_{DK,fav}^{KsKPi}
+double a_sup_DK_KsKPi  ;// = 0.336; // A_{DK,sup}^{KsKPi}
 //
-double r_DK_fos_Ks_KPi_stat_err      = 0.96100;
-double a_fav_DK_KsKPi_stat_err       = 0.10900;
-double a_sup_DK_KsKPi_stat_err       = 0.20800;
+double r_DK_fos_Ks_KPi_stat_err ;//     = 0.961;
+double a_fav_DK_KsKPi_stat_err   ;//    = 0.109;
+double a_sup_DK_KsKPi_stat_err   ;//    = 0.208;
 
-double r_DK_fos_Ks_KPi_syst_err      = 0.06000;
-double a_fav_DK_KsKPi_syst_err       = 0.02900;
-double a_sup_DK_KsKPi_syst_err       = 0.02600;
+double r_DK_fos_Ks_KPi_syst_err   ;//   = 0.060;
+double a_fav_DK_KsKPi_syst_err    ;//   = 0.029;
+double a_sup_DK_KsKPi_syst_err    ;//   = 0.026;
 
 TVectorD GLS_x_stat_err(3),GLS_x_syst_err(3),GLS_x_err(3);
 
-double r_CP_DKPiPi      =  1.040; // R_{CP}^{DKPiPi}
-double a_fav_DKPiPi_KPi =  0.013; // A_{fav}_{DKPiPi,KPi}
-double a_CP_DKPiPi_KK   = -0.045; // A_{CP}^{DKPiPi,KK}
-double a_CP_DKPiPi_PiPi = -0.054; // A_{CP}^{DKPiPi,PiPi}
-double r_plus_DKPiPi_KPi=  0.0107; // R_{plus}^{DKPiPi,KPi}
-double r_minus_DKPiPi_KPi= 0.0053; // R_{minus}^{DKPiPi,KPi}
+
+// GAKPiPiDhh
+
+double r_CP_DKPiPi      ;//=  1.040; // R_{CP}^{DKPiPi}
+double a_fav_DKPiPi_KPi ;//=  0.013; // A_{fav}_{DKPiPi,KPi}
+double a_CP_DKPiPi_KK   ;//= -0.045; // A_{CP}^{DKPiPi,KK}
+double a_CP_DKPiPi_PiPi ;//= -0.054; // A_{CP}^{DKPiPi,PiPi}
+double r_plus_DKPiPi_KPi;//=  0.0107; // R_{plus}^{DKPiPi,KPi}
+double r_minus_DKPiPi_KPi;//= 0.0053; // R_{minus}^{DKPiPi,KPi}
 //
-double r_CP_DKPiPi_stat_err          = 0.064;
-double a_fav_DKPiPi_KPi_stat_err     = 0.019;
-double a_CP_DKPiPi_KK_stat_err       = 0.064;
-double a_CP_DKPiPi_PiPi_stat_err     = 0.101;
-double r_plus_DKPiPi_KPi_stat_err    = 0.006;
-double r_minus_DKPiPi_KPi_stat_err   = 0.0045;
+double r_CP_DKPiPi_stat_err ;//         = 0.064;
+double a_fav_DKPiPi_KPi_stat_err;//     = 0.019;
+double a_CP_DKPiPi_KK_stat_err     ;//  = 0.064;
+double a_CP_DKPiPi_PiPi_stat_err  ;//   = 0.101;
+double r_plus_DKPiPi_KPi_stat_err  ;//  = 0.006;
+double r_minus_DKPiPi_KPi_stat_err  ;// = 0.0045;
 
 
-double r_CP_DKPiPi_syst_err          = 0.00000;
-double a_fav_DKPiPi_KPi_syst_err     = 0.013;
-double a_CP_DKPiPi_KK_syst_err       = 0.011;
-double a_CP_DKPiPi_PiPi_syst_err     = 0.011;
-double r_plus_DKPiPi_KPi_syst_err    = 0.0011;
-double r_minus_DKPiPi_KPi_syst_err   = 0.0006;
+double r_CP_DKPiPi_syst_err         ;// = 0.00000;
+double a_fav_DKPiPi_KPi_syst_err   ;//  = 0.013;
+double a_CP_DKPiPi_KK_syst_err    ;//   = 0.011;
+double a_CP_DKPiPi_PiPi_syst_err  ;//   = 0.011;
+double r_plus_DKPiPi_KPi_syst_err  ;//  = 0.0011;
+double r_minus_DKPiPi_KPi_syst_err  ;// = 0.0006;
 
 
 TVectorD GAKPiPiDhh_x_stat_err(6), GAKPiPiDhh_x_syst_err(6), GAKPiPiDhh_x_err(6);

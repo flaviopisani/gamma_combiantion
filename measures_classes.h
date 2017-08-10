@@ -103,5 +103,16 @@ class Gabdkstarp : public Measures{
 	void assign_from_json (char* json_file);
 };
 
+class Gakpipidhh : public Measures{
+	public:
+	void assign_from_json (char* json_file);
+};
+
+class Gls : public Measures{
+	public:
+	void assign_from_json (char* json_file);
+};
+
+
 
 #endif

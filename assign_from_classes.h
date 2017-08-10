@@ -244,6 +244,46 @@ extern TMatrixDSym corSystGABDKstarp;
 
 
 
+// GAKPiPiDhh
+
+extern double r_CP_DKPiPi      ;//=  1.040; // R_{CP}^{DKPiPi}
+extern double a_fav_DKPiPi_KPi ;//=  0.013; // A_{fav}_{DKPiPi,KPi}
+extern double a_CP_DKPiPi_KK   ;//= -0.045; // A_{CP}^{DKPiPi,KK}
+extern double a_CP_DKPiPi_PiPi ;//= -0.054; // A_{CP}^{DKPiPi,PiPi}
+extern double r_plus_DKPiPi_KPi;//=  0.0107; // R_{plus}^{DKPiPi,KPi}
+extern double r_minus_DKPiPi_KPi;//= 0.0053; // R_{minus}^{DKPiPi,KPi}
+//
+extern double r_CP_DKPiPi_stat_err ;//         = 0.064;
+extern double a_fav_DKPiPi_KPi_stat_err;//     = 0.019;
+extern double a_CP_DKPiPi_KK_stat_err     ;//  = 0.064;
+extern double a_CP_DKPiPi_PiPi_stat_err  ;//   = 0.101;
+extern double r_plus_DKPiPi_KPi_stat_err  ;//  = 0.006;
+extern double r_minus_DKPiPi_KPi_stat_err  ;// = 0.0045;
+
+
+extern double r_CP_DKPiPi_syst_err         ;// = 0.00000;
+extern double a_fav_DKPiPi_KPi_syst_err   ;//  = 0.013;
+extern double a_CP_DKPiPi_KK_syst_err    ;//   = 0.011;
+extern double a_CP_DKPiPi_PiPi_syst_err  ;//   = 0.011;
+extern double r_plus_DKPiPi_KPi_syst_err  ;//  = 0.0011;
+extern double r_minus_DKPiPi_KPi_syst_err  ;// = 0.0006;
+
+
+
+// GSL
+
+extern double r_DK_fos_Ks_KPi ;// = 3.855; // R_{DK,fav/sup}^{KsKPi}
+extern double a_fav_DK_KsKPi  ;// = 0.026; // A_{DK,fav}^{KsKPi}
+extern double a_sup_DK_KsKPi  ;// = 0.336; // A_{DK,sup}^{KsKPi}
+//
+extern double r_DK_fos_Ks_KPi_stat_err ;//     = 0.961;
+extern double a_fav_DK_KsKPi_stat_err   ;//    = 0.109;
+extern double a_sup_DK_KsKPi_stat_err   ;//    = 0.208;
+
+extern double r_DK_fos_Ks_KPi_syst_err   ;//   = 0.060;
+extern double a_fav_DK_KsKPi_syst_err    ;//   = 0.029;
+extern double a_sup_DK_KsKPi_syst_err    ;//   = 0.026;
+
 
 
 

@@ -426,5 +426,70 @@ void Gabdkstarp :: assign_from_json (char* json_file) {
 
 
 
+void Gakpipidhh :: assign_from_json (char* json_file) {
+
+	std::ifstream ifs(json_file);
+	if (ifs) {
+	Json::Reader reader;
+	Json::Value obj;
+	reader.parse(ifs,obj);
+
+	v1 = obj["GAKPiPiDhh"]["GAKPiPiDhh_paper_0"]["r_CP_DKPiPi"]["value"].asDouble();
+	v2 = obj["GAKPiPiDhh"]["GAKPiPiDhh_paper_0"]["a_fav_DKPiPi_KPi"]["value"].asDouble();
+	v3 = obj["GAKPiPiDhh"]["GAKPiPiDhh_paper_0"]["a_CP_DKPiPi_KK"]["value"].asDouble();
+	v4 = obj["GAKPiPiDhh"]["GAKPiPiDhh_paper_0"]["a_CP_DKPiPi_PiPi"]["value"].asDouble();
+	v5 = obj["GAKPiPiDhh"]["GAKPiPiDhh_paper_0"]["r_plus_DKPiPi_KPi"]["value"].asDouble();
+	v6 = obj["GAKPiPiDhh"]["GAKPiPiDhh_paper_0"]["r_minus_DKPiPi_KPi"]["value"].asDouble();
+
+	v1_st = obj["GAKPiPiDhh"]["GAKPiPiDhh_paper_0"]["r_CP_DKPiPi"]["stat"].asDouble();
+	v2_st = obj["GAKPiPiDhh"]["GAKPiPiDhh_paper_0"]["a_fav_DKPiPi_KPi"]["stat"].asDouble();
+	v3_st = obj["GAKPiPiDhh"]["GAKPiPiDhh_paper_0"]["a_CP_DKPiPi_KK"]["stat"].asDouble();
+	v4_st = obj["GAKPiPiDhh"]["GAKPiPiDhh_paper_0"]["a_CP_DKPiPi_PiPi"]["stat"].asDouble();
+	v5_st = obj["GAKPiPiDhh"]["GAKPiPiDhh_paper_0"]["r_plus_DKPiPi_KPi"]["stat"].asDouble();
+	v6_st = obj["GAKPiPiDhh"]["GAKPiPiDhh_paper_0"]["r_minus_DKPiPi_KPi"]["stat"].asDouble();
+
+	v1_sy = obj["GAKPiPiDhh"]["GAKPiPiDhh_paper_0"]["r_CP_DKPiPi"]["sys"].asDouble();
+	v2_sy = obj["GAKPiPiDhh"]["GAKPiPiDhh_paper_0"]["a_fav_DKPiPi_KPi"]["sys"].asDouble();
+	v3_sy = obj["GAKPiPiDhh"]["GAKPiPiDhh_paper_0"]["a_CP_DKPiPi_KK"]["sys"].asDouble();
+	v4_sy = obj["GAKPiPiDhh"]["GAKPiPiDhh_paper_0"]["a_CP_DKPiPi_PiPi"]["sys"].asDouble();
+	v5_sy = obj["GAKPiPiDhh"]["GAKPiPiDhh_paper_0"]["r_plus_DKPiPi_KPi"]["sys"].asDouble();
+	v6_sy = obj["GAKPiPiDhh"]["GAKPiPiDhh_paper_0"]["r_minus_DKPiPi_KPi"]["sys"].asDouble();
+
+
+	}
+
+	else {exit(EXIT_FAILURE);}
+
+}
+
+
+
+void Gls :: assign_from_json (char* json_file) {
+
+	std::ifstream ifs(json_file);
+	if (ifs) {
+	Json::Reader reader;
+	Json::Value obj;
+	reader.parse(ifs,obj);
+
+	v1 = obj["GLS"]["GLS_paper_0"]["r_DK_fos_Ks_KPi"]["value"].asDouble();
+	v2 = obj["GLS"]["GLS_paper_0"]["a_fav_DK_KsKPi"]["value"].asDouble();
+	v3 = obj["GLS"]["GLS_paper_0"]["a_sup_DK_KsKPi"]["value"].asDouble();
+
+	v1_st = obj["GLS"]["GLS_paper_0"]["r_DK_fos_Ks_KPi"]["stat"].asDouble();
+	v2_st = obj["GLS"]["GLS_paper_0"]["a_fav_DK_KsKPi"]["stat"].asDouble();
+	v3_st = obj["GLS"]["GLS_paper_0"]["a_sup_DK_KsKPi"]["stat"].asDouble();
+
+	v1_sy = obj["GLS"]["GLS_paper_0"]["r_DK_fos_Ks_KPi"]["sys"].asDouble();
+	v2_sy = obj["GLS"]["GLS_paper_0"]["a_fav_DK_KsKPi"]["sys"].asDouble();
+	v3_sy = obj["GLS"]["GLS_paper_0"]["a_sup_DK_KsKPi"]["sys"].asDouble();	
+
+	}
+
+	else {exit(EXIT_FAILURE);}
+
+}
+
+
 
 
