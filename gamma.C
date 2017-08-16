@@ -255,7 +255,7 @@ assign_from_classes (json_file);
   for(unsigned long long int i = 0; i<NMAX; i++) {
 
     float pp = float(i)/NMAX*100;
-    int PP = (int) pp;
+    unsigned long long int PP = (unsigned long long int) pp;
     //    printf("%f %\n",pp);
     if(PP == progress) {
       printf("Extraction in progress, be patient: %d %\n",progress);
@@ -438,8 +438,6 @@ var_to_str[36] = "k_B_DKstar";
 
 
 
-
-//cout << "diobestia" << endl;
 
 
 
