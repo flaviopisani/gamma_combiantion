@@ -94,7 +94,11 @@ int main(int argc, char * argv[]) {
   }
   char * mode;
   mode = argv[1];
-  int NMAX = atoi(argv[2]);
+
+  unsigned long long int NMAX;
+  NMAX = strtoull (argv[2],NULL,10);
+
+
   int modeNum;
 
   char* json_file; 
@@ -248,7 +252,7 @@ assign_from_classes (json_file);
       }
     }
 
-  for(long int i = 0; i<NMAX; i++) {
+  for(unsigned long long int i = 0; i<NMAX; i++) {
 
     float pp = float(i)/NMAX*100;
     int PP = (int) pp;
