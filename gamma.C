@@ -37,7 +37,7 @@
 using namespace std;
 
 #define N1DPLOT  37		//updated
-#define NMODE 13		//updated
+#define NMODE 16		//updated //updated twice, sub-combinations 11->13->16
 #define NBIN 1800
 #define NBINX 100
 #define NBINY 100
@@ -206,7 +206,7 @@ assign_from_classes (json_file);
   // get best fit value
   for (int i=0; i<37; i++) param[i] = minimizer->GetParameter(i);		//updated, previously 32
   //printf(" %i %f\n",i,param[i]);
-  double tmp = prob(param,13);
+  double tmp = prob(param,16);
   printf("FCN value at minimum: %f %f\n",tmp,param[13]);
   //  return 0;
 

@@ -30,7 +30,10 @@ mode_to_str[8]   =  "ggszDKPi";
 mode_to_str[9]   =  "ggszDKstar0";
 mode_to_str[10]  =  "GBDstarKp";
 mode_to_str[11]  =  "GABDKstarp";
-mode_to_str[12]  =  "tot";
+mode_to_str[12] = "GGSZ";
+mode_to_str[13] = "GLWADS";
+mode_to_str[14] = "others";
+mode_to_str[15]  =  "tot";
 
 if(mode ==  mode_to_str[0])   modeNum=0;
 if(mode ==  mode_to_str[1])   modeNum=1;
@@ -45,6 +48,9 @@ if(mode ==  mode_to_str[9])   modeNum=9;
 if(mode ==  mode_to_str[10])   modeNum=10;
 if(mode ==  mode_to_str[11])   modeNum=11;
 if(mode ==  mode_to_str[12])   modeNum=12;
+if(mode ==  mode_to_str[13])   modeNum=13;
+if(mode ==  mode_to_str[14])   modeNum=14;
+if(mode ==  mode_to_str[15])   modeNum=15;
 
 /////////////////////////////////////////////////////////////////////////////////////////
 ///////////////////////////// Plot definition //////////////////////////////////////////
