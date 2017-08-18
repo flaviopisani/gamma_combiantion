@@ -16,8 +16,9 @@ add_library(gamma_lib STATIC function.cpp functions_dmix_th.cpp measures_classes
 target_link_libraries(gamma_lib ${ROOT_LIBRARIES} libjsoncpp)
 
 add_executable(gamma gamma.C)
+add_executable(gamma_tot gamma_tot.C)
 
 target_link_libraries(gamma gamma_lib ${GSL_LIBRARIES})
-
+target_link_libraries(gamma_tot gamma_lib ${GSL_LIBRARIES})
 
 
