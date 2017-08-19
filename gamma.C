@@ -419,6 +419,40 @@ var_to_str[36] = "k_B_DKstar";
 
 
 
+	else if (mode==mode_to_str[13]) {
+      H2D[5][14]->Fill(param[5],param[14],exp(logprob));
+      H2D[10][13]->Fill(param[10],param[13],exp(logprob));
+      H2D[10][26]->Fill(param[10],param[26],exp(logprob));
+      H2D[13][26]->Fill(param[13],param[26],exp(logprob));
+
+      H2D[11][13]->Fill(param[11],param[13],exp(logprob));
+      H2D[11][27]->Fill(param[11],param[27],exp(logprob));
+      H2D[13][27]->Fill(param[13],param[27],exp(logprob));
+
+      H2D[13][32]->Fill(param[13],param[32],exp(logprob));
+      H2D[32][33]->Fill(param[32],param[33],exp(logprob));
+      H2D[13][33]->Fill(param[13],param[33],exp(logprob));
+
+      H2D[13][34]->Fill(param[13],param[34],exp(logprob));
+      H2D[34][35]->Fill(param[34],param[35],exp(logprob));
+      H2D[13][35]->Fill(param[13],param[35],exp(logprob));
+
+      H2D[13][25]->Fill(param[13],param[25],exp(logprob));
+      H2D[9][13]->Fill(param[9],param[13],exp(logprob));
+      H2D[9][25]->Fill(param[9],param[25],exp(logprob));
+	}
+
+
+    else if (mode==mode_to_str[14]) {
+      H2D[13][25]->Fill(param[13],param[25],exp(logprob));
+      H2D[9][13]->Fill(param[9],param[13],exp(logprob));
+      H2D[9][25]->Fill(param[9],param[25],exp(logprob));
+      H2D[12][13]->Fill(param[12],param[13],exp(logprob));
+      H2D[12][19]->Fill(param[12],param[19],exp(logprob));
+      H2D[13][19]->Fill(param[13],param[19],exp(logprob));
+    }
+
+
     else {
       H2D[13][25]->Fill(param[13],param[25],exp(logprob));
       H2D[9][13]->Fill(param[9],param[13],exp(logprob));
@@ -504,6 +538,37 @@ var_to_str[36] = "k_B_DKstar";
       H2D[13][35]->Write();
     }
 
+	else if (mode==mode_to_str[13]) {
+      H2D[5][14]->Write();
+      H2D[10][13]->Write();
+      H2D[10][26]->Write();
+      H2D[13][26]->Write();
+
+      H2D[11][13]->Write();
+      H2D[11][27]->Write();
+      H2D[13][27]->Write();
+
+      H2D[13][32]->Write();
+      H2D[32][33]->Write();
+      H2D[13][33]->Write();
+
+      H2D[13][34]->Write();
+      H2D[34][35]->Write();
+      H2D[13][35]->Write();
+
+      H2D[13][25]->Write();
+      H2D[9][13]->Write();
+      H2D[9][25]->Write();
+	}
+
+    else if (mode==mode_to_str[14]) {
+      H2D[13][25]->Write();
+      H2D[9][13]->Write();
+      H2D[9][25]->Write();
+      H2D[12][13]->Write();
+      H2D[12][19]->Write();
+      H2D[13][19]->Write();
+    }
 
 
 
