@@ -480,6 +480,15 @@ var_to_str[36] = "k_B_DKstar";
       H2D[9][25]->Fill(param[9],param[25],exp(logprob));
    }
 
+    else if (mode==mode_to_str[12]) {
+      H2D[13][25]->Fill(param[13],param[25],exp(logprob));
+      H2D[9][13]->Fill(param[9],param[13],exp(logprob));
+      H2D[9][25]->Fill(param[9],param[25],exp(logprob));
+      H2D[11][13]->Fill(param[11],param[13],exp(logprob));
+      H2D[11][27]->Fill(param[11],param[27],exp(logprob));
+      H2D[13][27]->Fill(param[13],param[27],exp(logprob));
+    }
+
 
 
     else {
@@ -631,6 +640,16 @@ var_to_str[36] = "k_B_DKstar";
 
    }
 
+
+    else if (mode==mode_to_str[12]) {
+      H2D[13][25]->Write();
+      H2D[9][13]->Write();
+      H2D[9][25]->Write();
+      H2D[11][13]->Write();
+      H2D[11][27]->Write();
+      H2D[13][27]->Write();
+
+    }
 
 
     else {
