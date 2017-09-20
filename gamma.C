@@ -89,6 +89,15 @@ int main(int argc, char * argv[]) {
 
   int grid =0;
 
+if (argc == 1) {
+cout << endl << endl <<  endl << endl;
+cout << "To make a combination type: ./gamma [mode] [number of extractions] [file_name.json] " << endl;
+cout << "where:" << endl;
+cout << "_ [mode] can be the name of a single measurement (GAhh, GAhhhh, ADhhpi0, ggsz, GLS, GABDKstar, GAKPiPiDhh, BsDsK, ggszDKPi, ggszDKstar0, GBDstarKp, GABDKstarp), the name of a subcombination (GLWADS, GGSZ, Others) or the total combination (tot);" << endl;
+cout << "_ [file_name.json] is the file with .json extension where the input measurements are given; you can create your own file using the GUI in the repository." << endl;
+cout << endl << endl << endl << endl;
+}
+
   if (argc>5){
     cout<<"wrong usage. Correct: ./gamma [mode] [n. extraction]  "<<endl;return 0;
   }
